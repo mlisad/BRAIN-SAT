@@ -1,0 +1,71 @@
+.typeahead {
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    font-size: 14px;
+}
+
+.typeahead__open {
+    border: 1px solid #002080;
+}
+
+.typeahead__open .typeahead__text {
+    color: #999;
+    opacity: 0.4;
+}
+
+.typeahead__toggle {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 38px;
+}
+.typeahead__search {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    bottom: 2px;
+    line-height: 1em;
+    font-size: 12px;
+    padding: 1em;
+    width: 100%;
+    display: block;
+    cursor: text;
+    color: #555;
+    background-color: #fff;
+    outline: none;
+    z-index: 2;
+}
+.typeahead__text {
+    min-height: 36px;
+    font-size: 1em;
+    line-height: 1em;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+}
+
+.typeahead__list {
+    margin: 0;
+    padding: 0;
+}
+
+.typeahead__item {
+    display: block;
+    border-top: 1px solid #f4f4f4;
+
+}
+.typeahead__link {
+    display: block;
+    padding: 10px;
+    line-height: 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.typeahead__active {
+    background: #002080;
+    color: #fff;
+}

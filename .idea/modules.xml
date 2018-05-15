@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/molgenis.iml" filepath="$PROJECT_DIR$/molgenis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-annotators-cmd/molgenis-annotators-cmd.iml" filepath="$PROJECT_DIR$/molgenis-annotators-cmd/molgenis-annotators-cmd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-app/molgenis-app.iml" filepath="$PROJECT_DIR$/molgenis-app/molgenis-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-bootstrap/molgenis-bootstrap.iml" filepath="$PROJECT_DIR$/molgenis-bootstrap/molgenis-bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-catalogue/molgenis-catalogue.iml" filepath="$PROJECT_DIR$/molgenis-catalogue/molgenis-catalogue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-charts/molgenis-charts.iml" filepath="$PROJECT_DIR$/molgenis-charts/molgenis-charts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-core/molgenis-core.iml" filepath="$PROJECT_DIR$/molgenis-core/molgenis-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-core-ui/molgenis-core-ui.iml" filepath="$PROJECT_DIR$/molgenis-core-ui/molgenis-core-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-das/molgenis-das.iml" filepath="$PROJECT_DIR$/molgenis-das/molgenis-das.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data/molgenis-data.iml" filepath="$PROJECT_DIR$/molgenis-data/molgenis-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-annotators/molgenis-data-annotators.iml" filepath="$PROJECT_DIR$/molgenis-data-annotators/molgenis-data-annotators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-cache/molgenis-data-cache.iml" filepath="$PROJECT_DIR$/molgenis-data-cache/molgenis-data-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-csv/molgenis-data-csv.iml" filepath="$PROJECT_DIR$/molgenis-data-csv/molgenis-data-csv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-elasticsearch/molgenis-data-elasticsearch.iml" filepath="$PROJECT_DIR$/molgenis-data-elasticsearch/molgenis-data-elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-excel/molgenis-data-excel.iml" filepath="$PROJECT_DIR$/molgenis-data-excel/molgenis-data-excel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-googlespreadsheet/molgenis-data-googlespreadsheet.iml" filepath="$PROJECT_DIR$/molgenis-data-googlespreadsheet/molgenis-data-googlespreadsheet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-i18n/molgenis-data-i18n.iml" filepath="$PROJECT_DIR$/molgenis-data-i18n/molgenis-data-i18n.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-import/molgenis-data-import.iml" filepath="$PROJECT_DIR$/molgenis-data-import/molgenis-data-import.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-mapper/molgenis-data-mapper.iml" filepath="$PROJECT_DIR$/molgenis-data-mapper/molgenis-data-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-migrate/molgenis-data-migrate.iml" filepath="$PROJECT_DIR$/molgenis-data-migrate/molgenis-data-migrate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-platform/molgenis-data-platform.iml" filepath="$PROJECT_DIR$/molgenis-data-platform/molgenis-data-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-postgresql/molgenis-data-postgresql.iml" filepath="$PROJECT_DIR$/molgenis-data-postgresql/molgenis-data-postgresql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-rest/molgenis-data-rest.iml" filepath="$PROJECT_DIR$/molgenis-data-rest/molgenis-data-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-rest-client/molgenis-data-rest-client.iml" filepath="$PROJECT_DIR$/molgenis-data-rest-client/molgenis-data-rest-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-semanticsearch/molgenis-data-semanticsearch.iml" filepath="$PROJECT_DIR$/molgenis-data-semanticsearch/molgenis-data-semanticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-validation/molgenis-data-validation.iml" filepath="$PROJECT_DIR$/molgenis-data-validation/molgenis-data-validation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-data-vcf/molgenis-data-vcf.iml" filepath="$PROJECT_DIR$/molgenis-data-vcf/molgenis-data-vcf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-dataexplorer/molgenis-dataexplorer.iml" filepath="$PROJECT_DIR$/molgenis-dataexplorer/molgenis-dataexplorer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-fair/molgenis-fair.iml" filepath="$PROJECT_DIR$/molgenis-fair/molgenis-fair.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-file/molgenis-file.iml" filepath="$PROJECT_DIR$/molgenis-file/molgenis-file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-file-ingester/molgenis-file-ingester.iml" filepath="$PROJECT_DIR$/molgenis-file-ingester/molgenis-file-ingester.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-gavin/molgenis-gavin.iml" filepath="$PROJECT_DIR$/molgenis-gavin/molgenis-gavin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-genetics-diag/molgenis-genetics-diag.iml" filepath="$PROJECT_DIR$/molgenis-genetics-diag/molgenis-genetics-diag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-jobs/molgenis-jobs.iml" filepath="$PROJECT_DIR$/molgenis-jobs/molgenis-jobs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-js/molgenis-js.iml" filepath="$PROJECT_DIR$/molgenis-js/molgenis-js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-model-registry/molgenis-model-registry.iml" filepath="$PROJECT_DIR$/molgenis-model-registry/molgenis-model-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-ontology/molgenis-ontology.iml" filepath="$PROJECT_DIR$/molgenis-ontology/molgenis-ontology.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-ontology-core/molgenis-ontology-core.iml" filepath="$PROJECT_DIR$/molgenis-ontology-core/molgenis-ontology-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-pathways/molgenis-pathways.iml" filepath="$PROJECT_DIR$/molgenis-pathways/molgenis-pathways.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-platform-integration-tests/molgenis-platform-integration-tests.iml" filepath="$PROJECT_DIR$/molgenis-platform-integration-tests/molgenis-platform-integration-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-python/molgenis-python.iml" filepath="$PROJECT_DIR$/molgenis-python/molgenis-python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-questionnaires/molgenis-questionnaires.iml" filepath="$PROJECT_DIR$/molgenis-questionnaires/molgenis-questionnaires.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-r/molgenis-r.iml" filepath="$PROJECT_DIR$/molgenis-r/molgenis-r.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-scripts/molgenis-scripts.iml" filepath="$PROJECT_DIR$/molgenis-scripts/molgenis-scripts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-scripts-core/molgenis-scripts-core.iml" filepath="$PROJECT_DIR$/molgenis-scripts-core/molgenis-scripts-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-security/molgenis-security.iml" filepath="$PROJECT_DIR$/molgenis-security/molgenis-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-security-core/molgenis-security-core.iml" filepath="$PROJECT_DIR$/molgenis-security-core/molgenis-security-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-settings/molgenis-settings.iml" filepath="$PROJECT_DIR$/molgenis-settings/molgenis-settings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-test/molgenis-test.iml" filepath="$PROJECT_DIR$/molgenis-test/molgenis-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/molgenis-util/molgenis-util.iml" filepath="$PROJECT_DIR$/molgenis-util/molgenis-util.iml" />
+    </modules>
+  </component>
+</project>

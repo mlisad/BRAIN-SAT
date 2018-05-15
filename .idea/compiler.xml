@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="molgenis-annotators-cmd" />
+        <module name="molgenis-app" />
+        <module name="molgenis-bootstrap" />
+        <module name="molgenis-catalogue" />
+        <module name="molgenis-charts" />
+        <module name="molgenis-core" />
+        <module name="molgenis-core-ui" />
+        <module name="molgenis-das" />
+        <module name="molgenis-data" />
+        <module name="molgenis-data-annotators" />
+        <module name="molgenis-data-cache" />
+        <module name="molgenis-data-csv" />
+        <module name="molgenis-data-elasticsearch" />
+        <module name="molgenis-data-excel" />
+        <module name="molgenis-data-googlespreadsheet" />
+        <module name="molgenis-data-i18n" />
+        <module name="molgenis-data-import" />
+        <module name="molgenis-data-mapper" />
+        <module name="molgenis-data-migrate" />
+        <module name="molgenis-data-platform" />
+        <module name="molgenis-data-postgresql" />
+        <module name="molgenis-data-rest" />
+        <module name="molgenis-data-rest-client" />
+        <module name="molgenis-data-semanticsearch" />
+        <module name="molgenis-data-validation" />
+        <module name="molgenis-data-vcf" />
+        <module name="molgenis-dataexplorer" />
+        <module name="molgenis-fair" />
+        <module name="molgenis-file" />
+        <module name="molgenis-file-ingester" />
+        <module name="molgenis-gavin" />
+        <module name="molgenis-genetics-diag" />
+        <module name="molgenis-jobs" />
+        <module name="molgenis-js" />
+        <module name="molgenis-model-registry" />
+        <module name="molgenis-ontology" />
+        <module name="molgenis-ontology-core" />
+        <module name="molgenis-pathways" />
+        <module name="molgenis-platform-integration-tests" />
+        <module name="molgenis-python" />
+        <module name="molgenis-questionnaires" />
+        <module name="molgenis-r" />
+        <module name="molgenis-scripts" />
+        <module name="molgenis-scripts-core" />
+        <module name="molgenis-security" />
+        <module name="molgenis-security-core" />
+        <module name="molgenis-settings" />
+        <module name="molgenis-test" />
+        <module name="molgenis-util" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="molgenis" target="1.5" />
+      <module name="molgenis-annotators-cmd" target="1.8" />
+      <module name="molgenis-app" target="1.8" />
+      <module name="molgenis-bootstrap" target="1.8" />
+      <module name="molgenis-catalogue" target="1.8" />
+      <module name="molgenis-charts" target="1.8" />
+      <module name="molgenis-core" target="1.8" />
+      <module name="molgenis-core-ui" target="1.8" />
+      <module name="molgenis-das" target="1.8" />
+      <module name="molgenis-data" target="1.8" />
+      <module name="molgenis-data-annotators" target="1.8" />
+      <module name="molgenis-data-cache" target="1.8" />
+      <module name="molgenis-data-csv" target="1.8" />
+      <module name="molgenis-data-elasticsearch" target="1.8" />
+      <module name="molgenis-data-excel" target="1.8" />
+      <module name="molgenis-data-googlespreadsheet" target="1.8" />
+      <module name="molgenis-data-i18n" target="1.8" />
+      <module name="molgenis-data-import" target="1.8" />
+      <module name="molgenis-data-mapper" target="1.8" />
+      <module name="molgenis-data-migrate" target="1.8" />
+      <module name="molgenis-data-platform" target="1.8" />
+      <module name="molgenis-data-postgresql" target="1.8" />
+      <module name="molgenis-data-rest" target="1.8" />
+      <module name="molgenis-data-rest-client" target="8" />
+      <module name="molgenis-data-semanticsearch" target="1.8" />
+      <module name="molgenis-data-validation" target="1.8" />
+      <module name="molgenis-data-vcf" target="1.8" />
+      <module name="molgenis-dataexplorer" target="1.8" />
+      <module name="molgenis-fair" target="1.8" />
+      <module name="molgenis-file" target="1.8" />
+      <module name="molgenis-file-ingester" target="1.8" />
+      <module name="molgenis-gavin" target="1.8" />
+      <module name="molgenis-genetics-diag" target="1.8" />
+      <module name="molgenis-jobs" target="1.8" />
+      <module name="molgenis-js" target="1.8" />
+      <module name="molgenis-model-registry" target="1.8" />
+      <module name="molgenis-ontology" target="1.8" />
+      <module name="molgenis-ontology-core" target="1.8" />
+      <module name="molgenis-pathways" target="1.8" />
+      <module name="molgenis-platform-integration-tests" target="1.8" />
+      <module name="molgenis-python" target="1.8" />
+      <module name="molgenis-questionnaires" target="1.8" />
+      <module name="molgenis-r" target="1.8" />
+      <module name="molgenis-scripts" target="1.8" />
+      <module name="molgenis-scripts-core" target="1.8" />
+      <module name="molgenis-security" target="1.8" />
+      <module name="molgenis-security-core" target="1.8" />
+      <module name="molgenis-settings" target="1.8" />
+      <module name="molgenis-test" target="1.8" />
+      <module name="molgenis-util" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

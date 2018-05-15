@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="molgenis-app:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b8e83fae-d010-4899-b474-752c29a19940" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/img/bcn.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/img/distributionPlot_43879.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/img/distributionPlot_52564.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/img/logoBRAINSAT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/img/logoBRAINSAT2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/img/testLogoGOAD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatBarGraph.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatFunctions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatPublicationPart.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatScatterPlot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatmanager.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/d3-tip.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/plotly-latest.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/brainsat-contactPage.ftl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/brainsat-informationPage.ftl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/brainsat-publicationPage.ftl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-brainsatmanager.ftl" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/molgenis-annotators-cmd/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-annotators-cmd/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-annotators-cmd/target/molgenis-annotators-cmd-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-annotators-cmd/target/molgenis-annotators-cmd-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-annotators-cmd/target/molgenis-annotators-cmd-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-annotators-cmd/target/molgenis-annotators-cmd-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-bootstrap/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-bootstrap/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-bootstrap/target/molgenis-bootstrap-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-bootstrap/target/molgenis-bootstrap-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-bootstrap/target/molgenis-bootstrap-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-bootstrap/target/molgenis-bootstrap-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-catalogue/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-catalogue/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-catalogue/target/molgenis-catalogue-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-catalogue/target/molgenis-catalogue-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-catalogue/target/molgenis-catalogue-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-catalogue/target/molgenis-catalogue-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-charts/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-charts/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-charts/target/molgenis-charts-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-charts/target/molgenis-charts-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-charts/target/molgenis-charts-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-charts/target/molgenis-charts-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/goadmanager/GoadManagerController.java" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/brainsatmanager/BrainsatManagerController.java" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/goadtest/GoadManagerSingleCellController.java" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/goadtest/GoadManagerSingleCellController.java" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/QE_Bargraph.css" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/QE_Bargraph.css" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/QE_Dashboard.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/goad.css" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/brainsat.css" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/lasso.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/.Rhistory" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/d3-3.5.6.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/d3-legend.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/d3.tip.v0.6.3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadBarGraph.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadDashboard.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadFunctions.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadPublicationPart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadPublicationPartSingleCell.js" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/XgoadPublicationPartSingleCell.js" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadmanager.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/html2canvas.js" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/html2canvas.js" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/html2canvas.svg.js" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/html2canvas.svg.js" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/htmlwidgets.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/scatterD3.js" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/scatterD3.js" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/select2-patched.js" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/select2-patched.js" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/singlecell/app.js" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/singlecell/app.js" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/singlecell/manifest.js" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/singlecell/manifest.js" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/singlecell/vendor.js" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/singlecell/vendor.js" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-contactPage.ftl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-informationPage.ftl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-loader.ftl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-publicationPage.ftl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-tutorialPage.ftl" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/brainsat-tutorialPage.ftl" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/molgenis-header.ftl" afterPath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/molgenis-header.ftl" />
+      <change beforePath="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-goadmanager.ftl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-annotators/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-annotators/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-annotators/target/molgenis-data-annotators-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-annotators/target/molgenis-data-annotators-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-annotators/target/molgenis-data-annotators-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-annotators/target/molgenis-data-annotators-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-cache/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-cache/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-cache/target/molgenis-data-cache-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-cache/target/molgenis-data-cache-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-cache/target/molgenis-data-cache-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-cache/target/molgenis-data-cache-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-csv/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-csv/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-csv/target/molgenis-data-csv-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-csv/target/molgenis-data-csv-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-csv/target/molgenis-data-csv-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-csv/target/molgenis-data-csv-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-elasticsearch/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-elasticsearch/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-elasticsearch/target/molgenis-data-elasticsearch-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-elasticsearch/target/molgenis-data-elasticsearch-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-elasticsearch/target/molgenis-data-elasticsearch-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-elasticsearch/target/molgenis-data-elasticsearch-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-excel/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-excel/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-excel/target/molgenis-data-excel-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-excel/target/molgenis-data-excel-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-excel/target/molgenis-data-excel-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-excel/target/molgenis-data-excel-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-googlespreadsheet/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-googlespreadsheet/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-googlespreadsheet/target/molgenis-data-googlespreadsheet-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-googlespreadsheet/target/molgenis-data-googlespreadsheet-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-googlespreadsheet/target/molgenis-data-googlespreadsheet-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-googlespreadsheet/target/molgenis-data-googlespreadsheet-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-i18n/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-i18n/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-i18n/target/molgenis-data-i18n-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-i18n/target/molgenis-data-i18n-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-i18n/target/molgenis-data-i18n-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-i18n/target/molgenis-data-i18n-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-import/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-import/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-import/target/molgenis-data-import-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-import/target/molgenis-data-import-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-import/target/molgenis-data-import-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-import/target/molgenis-data-import-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-mapper/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-mapper/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-mapper/target/molgenis-data-mapper-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-mapper/target/molgenis-data-mapper-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-mapper/target/molgenis-data-mapper-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-mapper/target/molgenis-data-mapper-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-migrate/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-migrate/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-migrate/target/molgenis-data-migrate-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-migrate/target/molgenis-data-migrate-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-migrate/target/molgenis-data-migrate-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-migrate/target/molgenis-data-migrate-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-platform/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-platform/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-platform/target/molgenis-data-platform-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-platform/target/molgenis-data-platform-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-platform/target/molgenis-data-platform-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-platform/target/molgenis-data-platform-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-postgresql/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-postgresql/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-postgresql/target/molgenis-data-postgresql-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-postgresql/target/molgenis-data-postgresql-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-postgresql/target/molgenis-data-postgresql-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-postgresql/target/molgenis-data-postgresql-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-rest-client/.gitignore" afterPath="$PROJECT_DIR$/molgenis-data-rest-client/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-rest-client/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-rest-client/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-rest-client/target/molgenis-data-rest-client-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-rest-client/target/molgenis-data-rest-client-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-rest-client/target/molgenis-data-rest-client-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-rest-client/target/molgenis-data-rest-client-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-rest/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-rest/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-rest/target/molgenis-data-rest-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-rest/target/molgenis-data-rest-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-rest/target/molgenis-data-rest-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-rest/target/molgenis-data-rest-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-semanticsearch/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-semanticsearch/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-semanticsearch/target/molgenis-data-semanticsearch-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-semanticsearch/target/molgenis-data-semanticsearch-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-semanticsearch/target/molgenis-data-semanticsearch-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-semanticsearch/target/molgenis-data-semanticsearch-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-validation/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-validation/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-validation/target/molgenis-data-validation-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-validation/target/molgenis-data-validation-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-validation/target/molgenis-data-validation-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-validation/target/molgenis-data-validation-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-vcf/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data-vcf/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-vcf/target/molgenis-data-vcf-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data-vcf/target/molgenis-data-vcf-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data-vcf/target/molgenis-data-vcf-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data-vcf/target/molgenis-data-vcf-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-data/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data/target/molgenis-data-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-data/target/molgenis-data-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-data/target/molgenis-data-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-data/target/molgenis-data-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-fair/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-fair/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-fair/target/molgenis-fair-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-fair/target/molgenis-fair-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-fair/target/molgenis-fair-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-fair/target/molgenis-fair-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-file-ingester/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-file-ingester/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-file-ingester/target/molgenis-file-ingester-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-file-ingester/target/molgenis-file-ingester-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-file-ingester/target/molgenis-file-ingester-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-file-ingester/target/molgenis-file-ingester-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-file/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-file/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-file/target/molgenis-file-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-file/target/molgenis-file-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-file/target/molgenis-file-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-file/target/molgenis-file-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-gavin/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-gavin/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-gavin/target/molgenis-gavin-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-gavin/target/molgenis-gavin-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-gavin/target/molgenis-gavin-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-gavin/target/molgenis-gavin-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-genetics-diag/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-genetics-diag/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-genetics-diag/target/molgenis-genetics-diag-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-genetics-diag/target/molgenis-genetics-diag-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-genetics-diag/target/molgenis-genetics-diag-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-genetics-diag/target/molgenis-genetics-diag-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-jobs/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-jobs/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-jobs/target/molgenis-jobs-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-jobs/target/molgenis-jobs-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-jobs/target/molgenis-jobs-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-jobs/target/molgenis-jobs-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-js/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-js/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-js/target/molgenis-js-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-js/target/molgenis-js-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-js/target/molgenis-js-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-js/target/molgenis-js-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-model-registry/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-model-registry/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-model-registry/target/molgenis-model-registry-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-model-registry/target/molgenis-model-registry-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-model-registry/target/molgenis-model-registry-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-model-registry/target/molgenis-model-registry-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-ontology-core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-ontology-core/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-ontology-core/target/molgenis-ontology-core-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-ontology-core/target/molgenis-ontology-core-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-ontology-core/target/molgenis-ontology-core-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-ontology-core/target/molgenis-ontology-core-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-ontology/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-ontology/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-ontology/target/molgenis-ontology-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-ontology/target/molgenis-ontology-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-ontology/target/molgenis-ontology-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-ontology/target/molgenis-ontology-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-pathways/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-pathways/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-pathways/target/molgenis-pathways-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-pathways/target/molgenis-pathways-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-pathways/target/molgenis-pathways-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-pathways/target/molgenis-pathways-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-platform-integration-tests/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-platform-integration-tests/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-platform-integration-tests/target/molgenis-platform-integration-tests-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-platform-integration-tests/target/molgenis-platform-integration-tests-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-platform-integration-tests/target/molgenis-platform-integration-tests-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-platform-integration-tests/target/molgenis-platform-integration-tests-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-python/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-python/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-python/target/molgenis-python-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-python/target/molgenis-python-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-python/target/molgenis-python-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-python/target/molgenis-python-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-questionnaires/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-questionnaires/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-questionnaires/target/molgenis-questionnaires-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-questionnaires/target/molgenis-questionnaires-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-questionnaires/target/molgenis-questionnaires-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-questionnaires/target/molgenis-questionnaires-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-r/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-r/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-r/target/molgenis-r-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-r/target/molgenis-r-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-r/target/molgenis-r-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-r/target/molgenis-r-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-scripts/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-scripts/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-scripts/target/molgenis-scripts-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-scripts/target/molgenis-scripts-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-scripts/target/molgenis-scripts-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-scripts/target/molgenis-scripts-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-settings/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-settings/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-settings/target/molgenis-settings-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-settings/target/molgenis-settings-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-settings/target/molgenis-settings-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-settings/target/molgenis-settings-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-test/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-test/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-test/target/molgenis-test-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-test/target/molgenis-test-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-test/target/molgenis-test-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-test/target/molgenis-test-3.0.2-GOAD3-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-util/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/molgenis-util/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/molgenis-util/target/molgenis-util-3.0.2-GOAD3-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/molgenis-util/target/molgenis-util-3.0.2-GOAD3-SNAPSHOT-sources.jar" />
+      <change beforePath="$PROJECT_DIR$/molgenis-util/target/molgenis-util-3.0.2-GOAD3-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/molgenis-util/target/molgenis-util-3.0.2-GOAD3-SNAPSHOT.jar" />
+    </list>
+    <ignored path="$PROJECT_DIR$/molgenis-pathways/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-genetics-diag/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-charts/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-bootstrap/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-fair/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-postgresql/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-r/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-rest-client/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-ontology-core/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-validation/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-googlespreadsheet/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-semanticsearch/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-file-ingester/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-i18n/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-file/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-core-ui/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-app/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-annotators-cmd/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-js/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-gavin/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-jobs/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-questionnaires/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-core/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-rest/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-test/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-security/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-vcf/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-platform/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-import/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-security-core/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-annotators/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-cache/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-scripts/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-scripts-core/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-python/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-das/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-csv/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-catalogue/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-platform-integration-tests/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-dataexplorer/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-model-registry/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-migrate/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-elasticsearch/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data-excel/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-util/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-ontology/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-settings/target/" />
+    <ignored path="$PROJECT_DIR$/molgenis-data/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="view-brainsatmanager.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-brainsatmanager.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="123" lean-forward="false" selection-start-line="4" selection-start-column="123" selection-end-line="4" selection-end-column="123" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="molgenis-header.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/molgenis-header.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="61" lean-forward="false" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrainsatManagerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/brainsatmanager/BrainsatManagerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="brainsatBarGraph.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatBarGraph.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="60" column="37" lean-forward="false" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XgoadPublicationPartSingleCell.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/XgoadPublicationPartSingleCell.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scatterD3.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/scatterD3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="brainsat.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/brainsat.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2955">
+              <caret line="197" column="1" lean-forward="false" selection-start-line="197" selection-start-column="1" selection-end-line="197" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="brainsat-contactPage.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/brainsat-contactPage.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="brainsat-informationPage.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/brainsat-informationPage.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1170">
+              <caret line="78" column="58" lean-forward="false" selection-start-line="78" selection-start-column="58" selection-end-line="78" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="brainsatPublicationPart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatPublicationPart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2295">
+              <caret line="156" column="42" lean-forward="false" selection-start-line="156" selection-start-column="32" selection-end-line="156" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gene</find>
+      <find>searchGeneBarGraph</find>
+      <find>geneName</find>
+      <find>QE</find>
+      <find>search</find>
+      <find>QEsearch</find>
+      <find>dashboard</find>
+      <find>geneBarGraph</find>
+      <find>obtainTPM</find>
+      <find>qe</find>
+      <find>geneText</find>
+      <find>enterse</find>
+      <find>QE_con</find>
+      <find>yScale</find>
+      <find>h</find>
+      <find>addD</find>
+      <find>x axis</find>
+      <find>geneSearch</find>
+      <find>obtainTPMofGenes</find>
+      <find>GOAD</find>
+      <find>uniqueTitle</find>
+      <find>cellty</find>
+      <find>publication</find>
+      <find>imgSource</find>
+      <find>information</find>
+      <find>tableContent</find>
+      <find>QEanalysis</find>
+      <find>tutorialButton</find>
+      <find>TestCombined</find>
+      <find>umcgImage</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/molgenis-core-ui/src</dir>
+      <dir>$PROJECT_DIR$/molgenis-core-ui</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/XmlMolgenisUiLoader.java" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/goadmanager/GoadManagerSingleCellController.java" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-goadmanager-singlecell" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-goadmanager-single.html" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/goadtest/GoadManagerSingleCellController.java" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/pom.xml" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadPublicationPartSingleCell.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/typeahead.css" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/target/classes/js/goadPublicationPart.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/html2canvas.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/htmlwidgets.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/html2canvas.svg.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/scatterD3.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/select2-patched.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/plotly-latest.min.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/QE_Bargraph.css" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/d3-tip.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/molgenis-header.ftl" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-goadmanager-single.ftl" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadScatterPlot.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-loader.ftl" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-publicationPage.ftl" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadFunctions.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadmanager.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-contactPage.ftl" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-tutorialPage.ftl" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadPublicationPart.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-informationPage.ftl" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/goad.css" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-goadmanager.ftl" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadBarGraph.js" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-brainsatmanager.ftl" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/goadmanager/GoadManagerController.java" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/brainsatmanager/GoadManagerController.java" />
+        <option value="$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/brainsatmanager/BrainsatManagerController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="molgenis-app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="molgenis-app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="molgenis-app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="jetty" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/molgenis-core-ui/node/node_modules" />
+    <handled-path value="$PROJECT_DIR$/molgenis-core-ui/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="56" />
+    <option name="y" value="43" />
+    <option name="width" value="1374" />
+    <option name="height" value="837" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="molgenis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SingleCellPipelineBRAINSAT" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.46896553" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="header.ftl&#9;FILE&#9;file:///home/maaike/Documents/scripts/goad/GOAD3.1.1/molgenis-core-ui/src/main/resources/templates/molgenis-header.ftl" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/singlecell" />
+      <recent name="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js" />
+      <recent name="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/singlecell" />
+      <recent name="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/vue" />
+      <recent name="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/molgenis-core-ui/src/main/resources/img" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.molgenis-app [jetty:run]">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="molgenis [NO TESTS clean install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="true" />
+            <option name="vmOptions" value="-Des.discovery.zen.ping.multicast.enabled=false -Des.network.host=localhost" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration name="molgenis [clean install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="-Des.discovery.zen.ping.multicast.enabled=false -Des.network.host=localhost" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration name="molgenis-app [jetty:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="-Xmx8g" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jetty:run" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="true" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/molgenis-app" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method>
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/molgenis-core-ui/pom.xml" goal="clean install -DskipTests" />
+      </method>
+    </configuration>
+    <configuration name="molgenis-app [jetty:stop]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jetty:stop" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/molgenis-app" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration name="molgenis-core-ui [NO TESTS clean install] (1)" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="true" />
+            <option name="vmOptions" value="-Des.discovery.zen.ping.multicast.enabled=false -Des.network.host=localhost" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="true" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/molgenis-core-ui" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="molgenis-app [exploded]" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.82" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dmolgenis.home=&lt;path to dir containing molgenis-server.properties&gt; -Xmx4g -Des.discovery.zen.ping.multicast.enabled=false -Des.network.host=localhost" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="molgenis-app:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_molgenis" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51728" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="molgenis-app:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Maven.molgenis [clean install]" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.molgenis [NO TESTS clean install]" />
+      <item index="2" class="java.lang.String" itemvalue="Maven.molgenis-core-ui [NO TESTS clean install] (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Maven.molgenis-app [jetty:stop]" />
+      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.molgenis-app [exploded]" />
+      <item index="5" class="java.lang.String" itemvalue="Maven.molgenis-app [jetty:run]" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Maven.molgenis-app [jetty:run]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8e83fae-d010-4899-b474-752c29a19940" name="Default" comment="" />
+      <created>1504781728145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1504781728145</updated>
+      <workItem from="1504781732360" duration="625000" />
+      <workItem from="1504783598795" duration="1603000" />
+      <workItem from="1504855392987" duration="4512000" />
+      <workItem from="1505036159436" duration="1838000" />
+      <workItem from="1505818024840" duration="7366000" />
+      <workItem from="1505977123411" duration="10072000" />
+      <workItem from="1505999168660" duration="3380000" />
+      <workItem from="1506005373440" duration="475000" />
+      <workItem from="1506062831107" duration="833000" />
+      <workItem from="1506322603535" duration="2685000" />
+      <workItem from="1506408097494" duration="2562000" />
+      <workItem from="1507632931233" duration="2696000" />
+      <workItem from="1507819090222" duration="574000" />
+      <workItem from="1510327665005" duration="930000" />
+      <workItem from="1510328609091" duration="664000" />
+      <workItem from="1510653252687" duration="16429000" />
+      <workItem from="1511359377205" duration="4725000" />
+      <workItem from="1511510730456" duration="7449000" />
+      <workItem from="1511797830439" duration="14176000" />
+      <workItem from="1512123393168" duration="774000" />
+      <workItem from="1512374206691" duration="10708000" />
+      <workItem from="1512463820454" duration="26419000" />
+      <workItem from="1512633671570" duration="545000" />
+      <workItem from="1512634358897" duration="9705000" />
+      <workItem from="1512734049275" duration="3935000" />
+      <workItem from="1512977969726" duration="16000" />
+      <workItem from="1512988622447" duration="2418000" />
+      <workItem from="1513003736347" duration="3463000" />
+      <workItem from="1513079632214" duration="29869000" />
+      <workItem from="1513601285745" duration="7735000" />
+      <workItem from="1513939255835" duration="5595000" />
+      <workItem from="1515595949979" duration="997000" />
+      <workItem from="1519136753462" duration="2161000" />
+      <workItem from="1519203083530" duration="2107000" />
+      <workItem from="1519206331327" duration="382000" />
+      <workItem from="1519206838206" duration="1708000" />
+      <workItem from="1519209901244" duration="9423000" />
+      <workItem from="1519286489498" duration="439000" />
+      <workItem from="1519306729166" duration="983000" />
+      <workItem from="1519376798329" duration="1117000" />
+      <workItem from="1519631438999" duration="761000" />
+      <workItem from="1519642853001" duration="10126000" />
+      <workItem from="1519718100188" duration="4744000" />
+      <workItem from="1519723686213" duration="490000" />
+      <workItem from="1519724396560" duration="14432000" />
+      <workItem from="1519804366717" duration="3600000" />
+      <workItem from="1520237407454" duration="11628000" />
+      <workItem from="1520332148598" duration="7847000" />
+      <workItem from="1520408262882" duration="15191000" />
+      <workItem from="1520617698293" duration="11606000" />
+      <workItem from="1520673041956" duration="3860000" />
+      <workItem from="1520938935433" duration="402000" />
+      <workItem from="1521197450973" duration="6310000" />
+      <workItem from="1521452441848" duration="4056000" />
+      <workItem from="1521465066693" duration="8792000" />
+      <workItem from="1521536026309" duration="8690000" />
+      <workItem from="1521624983369" duration="1272000" />
+      <workItem from="1521627606825" duration="153000" />
+      <workItem from="1521627809039" duration="3876000" />
+      <workItem from="1521636821263" duration="3079000" />
+      <workItem from="1521646150340" duration="659000" />
+      <workItem from="1521647082814" duration="380000" />
+      <workItem from="1521705772928" duration="5075000" />
+      <workItem from="1521713198191" duration="5804000" />
+      <workItem from="1521723664039" duration="4986000" />
+      <workItem from="1521792280375" duration="739000" />
+      <workItem from="1522138289567" duration="1047000" />
+      <workItem from="1522148518436" duration="500000" />
+      <workItem from="1522163532309" duration="1273000" />
+      <workItem from="1522225489390" duration="3696000" />
+      <workItem from="1522787151428" duration="3218000" />
+      <workItem from="1522829151473" duration="2303000" />
+      <workItem from="1522913243589" duration="5905000" />
+      <workItem from="1522997768575" duration="13313000" />
+      <workItem from="1523262022735" duration="519000" />
+      <workItem from="1523289088887" duration="1389000" />
+      <workItem from="1523431653860" duration="316000" />
+      <workItem from="1523521532502" duration="213000" />
+      <workItem from="1523612820620" duration="517000" />
+      <workItem from="1523862144913" duration="1606000" />
+      <workItem from="1524038325973" duration="691000" />
+      <workItem from="1525163252469" duration="1068000" />
+      <workItem from="1525356807221" duration="11031000" />
+      <workItem from="1525674044166" duration="2516000" />
+      <workItem from="1525849117518" duration="2536000" />
+      <workItem from="1526285884512" duration="167000" />
+      <workItem from="1526374768153" duration="444000" />
+      <workItem from="1526384145011" duration="665000" />
+      <workItem from="1526384897376" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="397595000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.4914163" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25272068" sideWeight="0.555794" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.4899857" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3361548" sideWeight="0.45422032" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4258312" sideWeight="0.50716335" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30114448" sideWeight="0.8566038" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22455573" sideWeight="0.1436673" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2880259" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25272068" sideWeight="0.444206" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32406288" sideWeight="0.49713877" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/singlecell/vendor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/vue/js/single-cell-project/app.js" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/goadtest/GoadManagerSingleCellController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/core-scripting.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/singlecell/manifest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="104" lean-forward="false" selection-start-line="0" selection-start-column="100" selection-end-line="0" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/node_modules/jquery.fancytree/src/jquery.fancytree.js" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/node_modules/jquery.fancytree/lib/jquery-ui.custom.js" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/jquery-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/scatterD3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/typeahead.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/target/classes/js/goadPublicationPartSingleCell.js" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/target/classes/js/goadFunctions.js" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/target/classes/js/goadmanager.js" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/target/classes/js/goadPublicationPart.js" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/molgenis-footer.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/jquery-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="304" column="11" lean-forward="false" selection-start-line="304" selection-start-column="11" selection-end-line="304" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-model-registry/src/main/resources/templates/view-standardsregistry_docs.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-model-registry/src/main/resources/js/standardsregistry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="207" column="55" lean-forward="true" selection-start-line="207" selection-start-column="55" selection-end-line="207" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/select2-patched.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="2604" column="12" lean-forward="false" selection-start-line="2604" selection-start-column="12" selection-end-line="2604" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/plotly-latest.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/htmlwidgets.js" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/bootbox.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/d3-tip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4800">
+          <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/QE_Dashboard.css" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/goadDashboard.js" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-menumanager.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/QE_Bargraph.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/img/distributionPlot_52564.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/img/distributionPlot_43879.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/loading.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/resource-macros.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/goad-loader.ftl" />
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatScatterPlot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/html2canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="2350" column="8" lean-forward="false" selection-start-line="2350" selection-start-column="8" selection-end-line="2350" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/html2canvas.svg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="495" column="45" lean-forward="false" selection-start-line="495" selection-start-column="45" selection-end-line="495" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/singlecell/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="0" column="8035" lean-forward="false" selection-start-line="0" selection-start-column="8035" selection-end-line="0" selection-end-column="8035" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-goadmanager-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/brainsat-publicationPage.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatFunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="88" column="30" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/brainsat-tutorialPage.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="926">
+          <caret line="74" column="90" lean-forward="true" selection-start-line="74" selection-start-column="90" selection-end-line="74" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatmanager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3780">
+          <caret line="256" column="35" lean-forward="false" selection-start-line="256" selection-start-column="35" selection-end-line="256" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/brainsat-contactPage.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/brainsat-informationPage.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="58" lean-forward="false" selection-start-line="78" selection-start-column="58" selection-end-line="78" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/css/brainsat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2955">
+          <caret line="197" column="1" lean-forward="false" selection-start-line="197" selection-start-column="1" selection-end-line="197" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatPublicationPart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="156" column="42" lean-forward="false" selection-start-line="156" selection-start-column="32" selection-end-line="156" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/scatterD3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/java/org/molgenis/ui/brainsatmanager/BrainsatManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/view-brainsatmanager.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="123" lean-forward="false" selection-start-line="4" selection-start-column="123" selection-end-line="4" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/templates/molgenis-header.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="61" lean-forward="false" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/XgoadPublicationPartSingleCell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molgenis-core-ui/src/main/resources/js/brainsatBarGraph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="60" column="37" lean-forward="false" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>molgenis-app:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46896553" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46896553" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>plotly-latest</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46896553" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46896553" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>molgenis</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46896553" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.46896553" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

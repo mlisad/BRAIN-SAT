@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="molgenis-app:war">
+    <output-path>$PROJECT_DIR$/molgenis-app/target</output-path>
+    <root id="archive" name="molgenis-app-3.0.2-GOAD3-SNAPSHOT.war">
+      <element id="artifact" artifact-name="molgenis-app:war exploded" />
+    </root>
+  </artifact>
+</component>

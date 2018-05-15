@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-annotators-cmd" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-bootstrap" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-catalogue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-charts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-core-ui" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-das" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-annotators" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-elasticsearch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-excel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-googlespreadsheet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-i18n" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-import" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-migrate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-postgresql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-rest-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-semanticsearch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-validation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-data-vcf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-dataexplorer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-fair" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-file" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-file-ingester" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-gavin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-genetics-diag" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-jobs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-model-registry" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-ontology" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-ontology-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-pathways" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-platform-integration-tests" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-python" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-questionnaires" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-r" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-scripts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-scripts-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-security-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-settings" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/molgenis-util" charset="UTF-8" />
+  </component>
+</project>

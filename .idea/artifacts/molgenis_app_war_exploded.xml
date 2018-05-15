@@ -1,0 +1,366 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="molgenis-app:war exploded">
+    <output-path>$PROJECT_DIR$/molgenis-app/target/molgenis-app-3.0.2-GOAD3-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="molgenis-app" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="molgenis-bootstrap-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-bootstrap" />
+          </element>
+          <element id="archive" name="molgenis-data-platform-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-platform" />
+          </element>
+          <element id="archive" name="molgenis-security-core-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-security-core" />
+          </element>
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.4.RELEASE" />
+          <element id="archive" name="molgenis-core-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-core" />
+          </element>
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:4.2.0.Final" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.0.0.GA" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.1" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.23" />
+          <element id="library" level="project" name="Maven: ch.ethz.ganymed:ganymed-ssh2:build210" />
+          <element id="library" level="project" name="Maven: com.kenai.nbpwr:edu-umd-cs-findbugs-annotations:1.3.2-201002241900" />
+          <element id="library" level="project" name="Maven: net.sourceforge.findbugs:annotations:1.3.2" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.2.4" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:2.0.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-orm:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: org.mapdb:mapdb:1.0.6" />
+          <element id="library" level="project" name="Maven: org.quartz-scheduler:quartz:2.2.2" />
+          <element id="archive" name="molgenis-data-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.3" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
+          <element id="library" level="project" name="Maven: cz.jirutka.rsql:rsql-parser:2.0.0" />
+          <element id="library" level="project" name="Maven: com.eaio.uuid:uuid:3.2" />
+          <element id="library" level="project" name="Maven: joda-time:joda-time:2.9.2" />
+          <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.2" />
+          <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.11" />
+          <element id="archive" name="molgenis-core-ui-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-core-ui" />
+          </element>
+          <element id="archive" name="molgenis-data-validation-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-validation" />
+          </element>
+          <element id="archive" name="molgenis-file-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-file" />
+          </element>
+          <element id="archive" name="molgenis-data-cache-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-cache" />
+          </element>
+          <element id="library" level="project" name="Maven: com.github.ben-manes.caffeine:caffeine:2.3.5" />
+          <element id="library" level="project" name="Maven: com.github.ben-manes.caffeine:guava:2.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: eu.bitwalker:UserAgentUtils:1.17" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-runtime:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-model:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-repository-api:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-query:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-repository-manager:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-repository-event:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-repository-http:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-repository-sparql:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-repository-contextaware:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-repository-sail:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryalgebra-model:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryalgebra-evaluation:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-http-client:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-sail-api:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-sail-federation:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryparser-api:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryparser-serql:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryparser-sparql:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryresultio-api:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryresultio-binary:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryresultio-sparqljson:2.0.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryresultio-sparqlxml:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryresultio-text:2.0.2" />
+          <element id="library" level="project" name="Maven: com.opencsv:opencsv:3.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-repository-dataset:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-http-protocol:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-datatypes:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-languages:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-binary:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-jsonld:2.0.2" />
+          <element id="library" level="project" name="Maven: com.github.jsonld-java:jsonld-java:0.8.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.0" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient-osgi:4.5.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpmime:4.5.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient-cache:4.5.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:fluent-hc:4.5.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore-osgi:4.4.4" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore-nio:4.4.4" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-ntriples:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-nquads:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-n3:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-rdfjson:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-rdfxml:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-trix:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-turtle:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-trig:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-sail-inferencer:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-sail-model:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-sail-lucene:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-sail-lucene-api:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-sail-memory:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-sail-base:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-sail-spin:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-spin:2.0.2" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-queryrender:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-sail-nativerdf:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-rio-api:2.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.rdf4j:rdf4j-util:2.0.2" />
+          <element id="archive" name="molgenis-security-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-security" />
+          </element>
+          <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
+          <element id="library" level="project" name="Maven: nl.captcha:simplecaptcha:1.2.1" />
+          <element id="library" level="project" name="Maven: com.google.api-client:google-api-client:1.21.0" />
+          <element id="library" level="project" name="Maven: com.google.oauth-client:google-oauth-client:1.21.0" />
+          <element id="library" level="project" name="Maven: com.google.http-client:google-http-client:1.21.0" />
+          <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-jackson2:1.21.0" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava-jdk5:17.0" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:4.2.0.RELEASE" />
+          <element id="archive" name="molgenis-dataexplorer-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-dataexplorer" />
+          </element>
+          <element id="library" level="project" name="Maven: com.github.jmchilton.blend4j:blend4j:0.1.0" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-client:1.17.1" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-json:1.17.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.jettison:jettison:1.1" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.17.1" />
+          <element id="library" level="project" name="Maven: com.sun.jersey.contribs:jersey-multipart:1.17.1" />
+          <element id="library" level="project" name="Maven: org.jvnet:mimepull:1.6" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.12" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.12" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.12" />
+          <element id="archive" name="molgenis-pathways-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-pathways" />
+          </element>
+          <element id="library" level="project" name="Maven: com.sun.xml.ws:jaxws-rt:2.2.8" />
+          <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.2.7" />
+          <element id="library" level="project" name="Maven: javax.xml.ws:jaxws-api:2.2.9" />
+          <element id="library" level="project" name="Maven: javax.xml.soap:javax.xml.soap-api:1.3.5" />
+          <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.2-b03" />
+          <element id="library" level="project" name="Maven: javax.jws:jsr181-api:1.0-MR1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-core:2.2.7" />
+          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:2.16" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.7" />
+          <element id="library" level="project" name="Maven: com.sun.xml.ws:policy:2.3.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.gmbal:gmbal-api-only:3.1.0-b001" />
+          <element id="library" level="project" name="Maven: org.glassfish.external:management-api:3.0.0-b012" />
+          <element id="library" level="project" name="Maven: org.jvnet.staxex:stax-ex:1.7.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.stream.buffer:streambuffer:1.5.1" />
+          <element id="library" level="project" name="Maven: org.jvnet.mimepull:mimepull:1.9.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.12" />
+          <element id="library" level="project" name="Maven: org.glassfish.ha:ha-api:3.1.9" />
+          <element id="library" level="project" name="Maven: com.sun.xml.messaging.saaj:saaj-impl:1.3.20" />
+          <element id="library" level="project" name="Maven: javax.xml.soap:saaj-api:1.3.4" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:woodstox-core-asl:4.1.2" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:3.1.1" />
+          <element id="library" level="project" name="Maven: com.sun.org.apache.xml.internal:resolver:20050927" />
+          <element id="library" level="project" name="Maven: org.jdom:jdom:1.1" />
+          <element id="archive" name="molgenis-data-excel-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-excel" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.poi:poi:3.9" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml:3.9" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:3.9" />
+          <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.3.0" />
+          <element id="library" level="project" name="Maven: stax:stax-api:1.0.1" />
+          <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
+          <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
+          <element id="archive" name="molgenis-data-csv-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-csv" />
+          </element>
+          <element id="library" level="project" name="Maven: net.sf.opencsv:opencsv:2.3" />
+          <element id="archive" name="molgenis-data-googlespreadsheet-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-googlespreadsheet" />
+          </element>
+          <element id="library" level="project" name="Maven: com.google.gdata:core:1.47.1" />
+          <element id="library" level="project" name="Maven: com.google.oauth-client:google-oauth-client-jetty:1.11.0-beta" />
+          <element id="library" level="project" name="Maven: com.google.oauth-client:google-oauth-client-java6:1.11.0-beta" />
+          <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty:6.1.26" />
+          <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty-util:6.1.26" />
+          <element id="library" level="project" name="Maven: javax.mail:mail:1.4" />
+          <element id="archive" name="molgenis-python-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-python" />
+          </element>
+          <element id="archive" name="molgenis-r-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-r" />
+          </element>
+          <element id="archive" name="molgenis-data-annotators-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-annotators" />
+          </element>
+          <element id="library" level="project" name="Maven: org.utgenome.thirdparty:picard:1.102.0" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant:1.8.4" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant-launcher:1.8.4" />
+          <element id="library" level="project" name="Maven: org.xerial.snappy:snappy-java:1.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-jexl:2.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant-apache-bcel:1.8.4" />
+          <element id="library" level="project" name="Maven: bcel:bcel:5.1" />
+          <element id="library" level="project" name="Maven: regexp:regexp:1.2" />
+          <element id="library" level="project" name="Maven: org.json:json:20141113" />
+          <element id="library" level="project" name="Maven: net.sf.jopt-simple:jopt-simple:4.9" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
+          <element id="archive" name="molgenis-charts-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-charts" />
+          </element>
+          <element id="archive" name="molgenis-data-rest-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-rest" />
+          </element>
+          <element id="archive" name="molgenis-js-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-js" />
+          </element>
+          <element id="archive" name="molgenis-jobs-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-jobs" />
+          </element>
+          <element id="archive" name="molgenis-data-vcf-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-vcf" />
+          </element>
+          <element id="library" level="project" name="Maven: nl.systemsgenetics:Genotype-IO:1.0.1" />
+          <element id="library" level="project" name="Maven: net.sf.trove4j:trove4j:3.0.3" />
+          <element id="library" level="project" name="Maven: commons-cli:commons-cli:1.2" />
+          <element id="archive" name="molgenis-data-mapper-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-mapper" />
+          </element>
+          <element id="archive" name="molgenis-ontology-core-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-ontology-core" />
+          </element>
+          <element id="library" level="project" name="Maven: net.sf.jwordnet:jwnl:1.4_rc3" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-math3:3.4.1" />
+          <element id="library" level="project" name="Maven: org.jscience:jscience:4.3.1" />
+          <element id="library" level="project" name="Maven: org.javolution:javolution:5.2.3" />
+          <element id="archive" name="molgenis-data-import-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-import" />
+          </element>
+          <element id="archive" name="molgenis-data-elasticsearch-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-elasticsearch" />
+          </element>
+          <element id="library" level="project" name="Maven: org.elasticsearch:elasticsearch:1.7.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers-common:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-queries:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-memory:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-highlighter:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-queryparser:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-sandbox:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-suggest:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-misc:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-join:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-grouping:4.10.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-spatial:4.10.4" />
+          <element id="library" level="project" name="Maven: com.spatial4j:spatial4j:0.4.1" />
+          <element id="library" level="project" name="Maven: net.java.dev.jna:jna:4.2.1" />
+          <element id="library" level="project" name="Maven: com.codepoetics:protonpack:1.8" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.4.RELEASE" />
+          <element id="archive" name="molgenis-das-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-das" />
+          </element>
+          <element id="library" level="project" name="Maven: uk.ac.ebi.das:jdas:1.0.4" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-xc:1.9.2" />
+          <element id="library" level="project" name="Maven: commons-httpclient:commons-httpclient:3.1" />
+          <element id="library" level="project" name="Maven: uk.ac.ebi.mydas:mydas:1.6.7" />
+          <element id="library" level="project" name="Maven: xpp3:xpp3:1.1.3.4.O" />
+          <element id="archive" name="molgenis-model-registry-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-model-registry" />
+          </element>
+          <element id="library" level="project" name="Maven: org.jsoup:jsoup:1.8.1" />
+          <element id="archive" name="molgenis-ontology-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-ontology" />
+          </element>
+          <element id="library" level="project" name="Maven: net.sourceforge.owlapi:owlapi-api:3.4.5" />
+          <element id="library" level="project" name="Maven: org.apache.felix:org.osgi.core:1.0.0" />
+          <element id="library" level="project" name="Maven: net.sourceforge.owlapi:owlapi-apibinding:3.4.5" />
+          <element id="library" level="project" name="Maven: net.sourceforge.owlapi:owlapi-impl:3.4.5" />
+          <element id="library" level="project" name="Maven: net.sourceforge.owlapi:owlapi-parsers:3.4.5" />
+          <element id="library" level="project" name="Maven: net.sourceforge.owlapi:owlapi-tools:3.4.5" />
+          <element id="archive" name="molgenis-data-semanticsearch-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-semanticsearch" />
+          </element>
+          <element id="archive" name="molgenis-data-migrate-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-migrate" />
+          </element>
+          <element id="archive" name="molgenis-data-postgresql-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-postgresql" />
+          </element>
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.4.1211" />
+          <element id="archive" name="molgenis-questionnaires-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-questionnaires" />
+          </element>
+          <element id="archive" name="molgenis-catalogue-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-catalogue" />
+          </element>
+          <element id="archive" name="molgenis-scripts-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-scripts" />
+          </element>
+          <element id="archive" name="molgenis-scripts-core-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-scripts-core" />
+          </element>
+          <element id="archive" name="molgenis-file-ingester-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-file-ingester" />
+          </element>
+          <element id="archive" name="molgenis-gavin-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-gavin" />
+          </element>
+          <element id="archive" name="molgenis-annotators-cmd-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-annotators-cmd" />
+          </element>
+          <element id="archive" name="molgenis-genetics-diag-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-genetics-diag" />
+          </element>
+          <element id="archive" name="molgenis-data-i18n-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-data-i18n" />
+          </element>
+          <element id="archive" name="molgenis-fair-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-fair" />
+          </element>
+          <element id="archive" name="molgenis-util-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-util" />
+          </element>
+          <element id="archive" name="molgenis-settings-3.0.2-GOAD3-SNAPSHOT.jar">
+            <element id="module-output" name="molgenis-settings" />
+          </element>
+          <element id="library" level="project" name="Maven: com.google.auto.value:auto-value:1.3" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:19.0" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.3" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.3" />
+          <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:1.7.12" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.12" />
+          <element id="library" level="project" name="Maven: junit:junit:4.10" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.1" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.6" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/molgenis-app/target/molgenis-app-3.0.2-GOAD3-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="molgenis-app/web/Web" />
+    </root>
+  </artifact>
+</component>
