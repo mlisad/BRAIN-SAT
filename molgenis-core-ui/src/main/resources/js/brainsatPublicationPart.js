@@ -1,5 +1,5 @@
 /*
- * Code written in this javascript document is used to perform features of the publication part of GOAD.
+ * Code written in this javascript document is used to perform features of the publication part of BRAINSAT.
  * @Author Mldubbelaar
  */
 
@@ -7,7 +7,7 @@
 $(document).ready(function () {
 	
 	//-------------------------------------------------//
-	//Global functions of the publication part of GOAD.//
+	//Global functions of the publication part of BRAINSET.//
 	//-------------------------------------------------//
 	
 	// When clicking upon a study within the studyTable.
@@ -20,7 +20,7 @@ $(document).ready(function () {
 		var uniqueConditions = [];
 		var studyConditions = [];
 		var studyInformation = [];
-		$.get("/api/v2/base_GOADstudies?q=GEOD_NR=="+$(this).attr("id")).done(function(data){
+		$.get("/api/v2/base_BRAINSATstudies?q=GEOD_NR=="+$(this).attr("id")).done(function(data){
 			var data = data["items"];
 			// The variables studyTitle and GEODOnPage are cleared.
 			var studyTitle = [];
@@ -76,7 +76,7 @@ $(document).ready(function () {
 	});
 
 	//---------------------------------------------//
-	//DE functions of the publication part of GOAD.//
+	//DE functions of the publication part of BRAINSAT.//
 	//---------------------------------------------//
 
 	//When clicking upon the DE button.
@@ -158,6 +158,7 @@ $(document).ready(function () {
                     function(data){
 						if (data.startsWith('Login success[1] "No differentially expressed genes where found')) {
 							$("#NoDEGMessage").show();
+                            $(".loader").hide();
 						} else {
 							// The DE table is added to the div DETable.
 							$("#DETable").append(
@@ -215,7 +216,7 @@ $(document).ready(function () {
 		});
 	
 	//---------------------------------------------//
-	//QE functions of the publication part of GOAD.//
+	//QE functions of the publication part of BRAINSAT.//
 	//---------------------------------------------//
 	
 	// When clicking upon the submit QE button

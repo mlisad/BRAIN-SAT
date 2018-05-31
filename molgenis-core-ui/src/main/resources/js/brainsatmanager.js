@@ -16,7 +16,7 @@ var bargraphData = [];
 var tableContentDE = [];
 // var appLoaded = false;
 // var reloadAgain = false;
-var studiesSearch = ["E-GEOD-43879", "E-GEOD-52564"];
+var studiesSearch = ["E-GEOD-99074", "E-GEOD-52564"];
 
 $(document).ready(function () {
 
@@ -26,20 +26,6 @@ $(document).ready(function () {
 	obtainStudies();
 	// if statement where the specific on enter button is used.
     enterSearch("geneText", "geneSearch");
-	
-	// The code below is used to connect the GOAD Facebook page to the website.
-	if ($('#fb-root').length > 0) {
-        $(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id))
-                return;
-            js = d.createElement(s);
-            js.id = id;
-            // Connecting to the appID that links to the GOAD facebook page
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=654692364667032";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    }  
 	
 	// When the user clicks upon the contact button, all other divs are hidden and contactInfo is shown.
 	$("body").on("click", "#contactButton", function(){
@@ -136,7 +122,7 @@ $(document).ready(function () {
                 var organism = "";
                 if($("dashboard_"+egeodStudyNr.replace(/-/g,'')).length === 0) {
                 	$("#geneInformation").append("<div id='dashboard_" + egeodStudyNr.replace(/-/g,'') + "' style='height:650px;'></div>");
-                    $.get('/api/v2/base_GOADstudies?attr=GEOD_NR,Title,Research_link,Author,Organism,&q=GEOD_NR=="'+egeodStudyNr+'"').done(function(data){
+                    $.get('/api/v2/base_BRAINSATstudies?attr=GEOD_NR,Title,Research_link,Author,Organism,&q=GEOD_NR=="'+egeodStudyNr+'"').done(function(data){
                         // imgSource = "/img/distributionPlot_" + egeodStudyNr.replace(/-/g, "").replace("EGEOD","")+".png";
                     	var data = data["items"];
                         // organism = data[1]['Organism'];
@@ -144,7 +130,7 @@ $(document).ready(function () {
                             $("#dashboard_"+data[1]["GEOD_NR"].replace(/-/g,"")).append("<div id='geneName' class='row'><div class='col-md-6' style='font-size:24pt;'><a href='https://www.ensembl.org/Mus_musculus/Gene/Summary?g="+ capitalizeEachWord(geneName) + "' target='_blank'><p style='margin-left:0.5em;'><b>"+capitalizeEachWord(geneName)+"</b></p></a></div></div>");
                             imgSource = "/img/distributionPlot_" + data[1]["GEOD_NR"].replace(/-/g,"").replace("EGEOD","")+".png";
                         	$("#dashboard_"+data[1]["GEOD_NR"].replace(/-/g,"")).append('<div class="row"><div class="col-xs-9 col-sm-9" style="font-size:24pt;"><p style="margin-left:0.5em;"><b>Mouse</b></p></div><div class="col-xs-3 col-sm-3 img" style="margin-bottom:-100px;"><img class="img-responsive" src=\"'+imgSource+'\"/></div></div>');
-                        } else if (organism === "Homo sapiens") {
+                        } else if (data[1]['Organism'] === "Homo sapiens") {
                             $("#dashboard_"+data[1]["GEOD_NR"].replace(/-/g,"")).append("<div id='geneName' class='row'><div class='col-md-6' style='font-size:24pt;'><a href='https://www.ensembl.org/Homo_sapiens/Gene/Summary?g="+ geneName.toUpperCase() + "' target='_blank'><p style='margin-left:0.5em;'><b>"+geneName.toUpperCase()+"</b></p></a></div></div>");
                             imgSource = "/img/distributionPlot_" + data[1]["GEOD_NR"].replace(/-/g,"").replace("EGEOD","")+".png";
                             $("#dashboard_"+data[1]["GEOD_NR"].replace(/-/g,"")).append('<div class="row"><div class="col-xs-9 col-sm-9" style="font-size:24pt;"><p style="margin-left:0.5em;"><b>Human</b></p></div><div class="col-xs-3 col-sm-3 img" style="margin-bottom:-100px;"><img class="img-responsive" src=\"'+imgSource+'\"/></div></div>');
@@ -189,7 +175,7 @@ $(document).ready(function () {
 		$("#tableContent").empty();
 		if ($('#conditionText').val() != "") {
 			// Studies that contain the condition given in the searchbar are returned.
-			$.get("/api/v2/base_GOADstudies?q=Abstract=q="+$("#conditionText").val().replace(/ /g,'_')).done(function(data){
+			$.get("/api/v2/base_BRAINSATstudies?q=Abstract=q="+$("#conditionText").val().replace(/ /g,'_')).done(function(data){
 			var data = data["items"];
 			var tdstart = "<td>";
 			var tdend = "</td>";

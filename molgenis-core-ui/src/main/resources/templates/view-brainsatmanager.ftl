@@ -1,7 +1,7 @@
 <#include "molgenis-header.ftl">
 <#include "molgenis-footer.ftl">
 
-<#assign css=["brainsat.css",  "scatterD3.css", "jquery-ui.css", "QE_Bargraph.css", "typeahead.css"]>
+<#assign css=["brainsat.css", "jquery-ui.css", "QE_BargraphBRAINSAT.css", "typeahead.css"]>
 <#assign js=["brainsatmanager.js", "brainsatPublicationPart.js", "brainsatScatterPlot.js", "brainsatBarGraph.js", "brainsatFunctions.js", "plotly-latest.min.js", "jquery-ui.js", "sorttable.js", "html2canvas.js","html2canvas.svg.js"]>
 
 <@header css js/>

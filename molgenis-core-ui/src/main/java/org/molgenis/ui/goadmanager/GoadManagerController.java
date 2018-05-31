@@ -1,11 +1,11 @@
 package org.molgenis.ui.goadmanager;
 
-import static org.molgenis.ui.goadmanager.GoadManagerController.URI;
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-
 import org.molgenis.ui.MolgenisPluginController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import static org.molgenis.ui.goadmanager.GoadManagerController.URI;
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Controller
 @RequestMapping(URI)

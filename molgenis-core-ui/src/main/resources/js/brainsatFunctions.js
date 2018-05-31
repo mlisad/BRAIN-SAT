@@ -33,7 +33,7 @@ function downloadInnerHtml(filename, elId, mimeType) {
 // Returns all of the studies.
 function returnStudies(){
 	// All of the known studies are obtained. 
-	$.get("/api/v2/base_GOADstudies?attrs=Unique_ID,GEOD_NR,Title,Author,Organism,Year,CelltypeID,SequencingType,Research_link&num=10000").done(function(data){
+	$.get("/api/v2/base_BRAINSATstudies?attrs=Unique_ID,GEOD_NR,Title,Author,Organism,Year,CelltypeID,SequencingType,Research_link&num=10000").done(function(data){
 		var data = data["items"];
 		var tdstart = "<td>";
 		var tdend = "</td>";
@@ -73,7 +73,7 @@ function returnHome(){
 // The function obtainStudies obtains the studies from the database in MOLGENIS and presents it on the BRAIN-sat homepage.
 function obtainStudies() {
 	// The studies known in the studies database are collected
-	$.get("/api/v2/base_GOADstudies?attrs=Unique_ID,GEOD_NR,Title,Author,Organism,Year,Region,CelltypeID,SequencingType,Research_link&num=10000").done(function(data){
+	$.get("/api/v2/base_BRAINSATstudies?attrs=Unique_ID,GEOD_NR,Title,Author,Organism,Year,Region,CelltypeID,SequencingType,Research_link&num=10000").done(function(data){
 		// The items within the data are collected and saved as variable data.
 		var data = data["items"];
 		var tdstart = "<td>";
@@ -282,5 +282,13 @@ function enterSearch(idInputDiv, idButtonDiv){
                 document.getElementById(idButtonDiv).click();
             }
         });
+    }
+}
+
+function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+        end = new Date().getTime();
     }
 }

@@ -13,6 +13,7 @@
 			<div id="NoDEGMessage" class="alert alert-danger" role="alert">
 						<strong>Oops!</strong> No significant differentially expressed genes where found.<br/>Please try again.
 			</div>
+
 			
 				<div id="analysis_info">
 					<strong>Quantitative Expression (QE)</strong> analysis can be used to determine which genes are expressed in particular cell type and to what degree. <br/>
@@ -101,7 +102,7 @@
              $("#searchGeneInput").show();
              var GEODName = GEODOnPage[0];
              if (GEODName !== '') {
-                 window.__INITIAL_STATE__ = GEODName;
+                 window.__INITIAL_STATE__ = GEODName.replace(/-/g,'');
              }
              if (appLoaded) {
                  removejscssfile("/js/singlecell/app.js", "js");
@@ -121,7 +122,7 @@
          var appLoaded = false;
          var reloadAgain = false;
          $(document).ready(function () {
-		 });
+         });
 
          function loadVue() {
              $.getScript("/js/singlecell/manifest.js", function (data, textStatus, jqxhr) {

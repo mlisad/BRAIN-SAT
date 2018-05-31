@@ -2,13 +2,19 @@
 	<div class="well">
         <br/>
         <table>
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
             <tr>
                 <td><img src="http://neuroscience.umcg.nl/en/wp-content/uploads/sites/3/2016/08/Marissa_Dubbelaar-1024x1024.jpg" alt="" width="55%"/></td>
+                <td><img src="/img/Maaike_Brummer_small.jpg" alt="" width="55%"/></td>
                 <td><img src="http://neuroscience.umcg.nl/en/wp-content/uploads/sites/3/2016/02/Bart_Eggen_small-1024x1024.jpg" alt="" width="55%"/></td>
                 <td><img src="http://neuroscience.umcg.nl/en/wp-content/uploads/sites/3/2016/02/Erik_Boddeke_small-1024x1024.jpg" alt="" width="55%"/></td>
             </tr>
             <tr>
                 <td>B.A.sc. M.L. Dubbelaar <a href="mailto:m.l.dubbelaar@umcg.nl"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+                <td>B.A.sc. M.L. Brummer <a href="mailto:m.l.brummer@umcg.nl"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
                 <td>Prof. Dr. B.J.L. Eggen <a href="mailto:b.j.l.eggen@umcg.nl"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
                 <td>Prof. Dr. H.W.G.M. Boddeke <a href="mailto:h.w.g.m.boddeke@umcg.nl"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
             </tr>
