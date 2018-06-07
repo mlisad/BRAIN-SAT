@@ -18,6 +18,8 @@ var tableContentDE = [];
 // var reloadAgain = false;
 var studiesSearch = ["E-GEOD-99074", "E-GEOD-52564"];
 
+// $.ajaxSetup({async:false});
+
 $(document).ready(function () {
 
     // Make sure that an autocomplete addition is made for #geneText
@@ -107,6 +109,7 @@ $(document).ready(function () {
 	// When clicking upon the gene search button, the typed gene is searched in mice or human studies.
 	// Returning those studies with the given TPM values in the shape of a dashboard.
 	$("body").on("click", "#geneSearch", function(){
+        $.ajaxSetup({async:false});
         $("#geneInformation").empty();
         // searchTopStudies();
 		var geneName = [];
@@ -141,8 +144,8 @@ $(document).ready(function () {
                         } else {
                             $("#dashboard_"+data[1]["GEOD_NR"].replace(/-/g,"")).append("<p class='svgTitle col-xs-9 col-sm-9'><b>"+ data[1]["Title"] +"</b><br/>By <a href='"+data[1]['Research_link']+"' target='_blank'>"+ data[1]["Author"] + "</a>"+ "</p> <br/>");
                         }
-                        // $("#dashboard_"+data[1]["GEOD_NR"].replace(/-/g,"")).append("<hr>")
                     });
+                    $.ajaxSetup({async:true});
                     obtainTPMofGenes(egeodStudyNr.replace(/-/g,''), geneName.toLowerCase(), egeodStudyNr.replace(/-/g,''), organism);
                 }
 			}

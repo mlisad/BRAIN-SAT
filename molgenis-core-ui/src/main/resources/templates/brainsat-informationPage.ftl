@@ -31,38 +31,40 @@
                 <col width="10%">
             </colgroup>
             <tr>
+                <td>Butovsky et al. (2013)</td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/25381879" target="_blank">Pubmed</a></td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52946" target="_blank">Data</a></td>
+            </tr>
+            <tr>
                 <td>Chiu et al. (2013)</td>
                 <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/23850290" target="_blank">Pubmed</a></td>
                 <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE43366" target="_blank">Data</a></td>
             </tr>
             <tr>
-                <td>Phatnani et al. (2013)</td>
-                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/23388633" target="_blank">Pubmed</a></td>
-                <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE43879" target="_blank">Data</a></td>
+                <td>Galatro et al. (2013)</td>
+                <td><a href=https://www.ncbi.nlm.nih.gov/pubmed/28671693" target="_blank">Pubmed</a></td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99074" target="_blank">Data</a></td>
+            </tr>
+            <tr>
+                <td>Gosselin et al. (2013)</td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/25480297" target="_blank">Pubmed</a></td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62826" target="_blank">Data</a></td>
+            </tr>
+            <tr>
+                <td>Hanamsagar et al. (2013)</td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/28618077" target="_blank">Pubmed</a></td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99622" target="_blank">Data</a></td>
+            </tr>
+            <tr>
+                <td>Matcovitch-Natan et al. (2013)</td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/27338705" target="_blank">Pubmed</a></td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE79818" target="_blank">Data</a></td>
             </tr>
             <tr>
                 <td>Zhang et al. (2014)</td>
                 <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/25186741" target="_blank">Pubmed</a></td>
                 <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52564" target="_blank">Data</a></td>
             </tr>
-		<#--<ul>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-68376/" target="_blank">Bruttger et al. (2015)</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-52946/" target="_blank">Butovsky et al. (2014)</a></li>-->
-			<#--<li>Chiu et al. (2013) <a href="https://www.ncbi.nlm.nih.gov/pubmed/23850290" target="_blank">Pubmed</a> <a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-43366/" target="_blank">Data</a></li>-->
-			<!--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-66211/" target="_blank">Cronk et al. (2013)</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-54443/" target="_blank">Crotti et al. (2014)</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-75889/" target="_blank">de Melo et al. (2015)</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-76130/" target="_blank">Jackson et al. (2016)</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-66217/" target="_blank">Johnson et al. (2015)</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-59725/" target="_blank">Lewis et al. (2014)</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-42880/" target="_blank">Mellén et al. (2013)</a></li>-->
-			<#--<li>Phatnani et al. (2013) <a href="https://www.ncbi.nlm.nih.gov/pubmed/23388633" target="_blank">Pubmed</a> <a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-43879/" target="_blank">Data</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-62641/" target="_blank">Salinas-Riester et al. (2015)</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-53789/" target="_blank">Solga et al. (2015)</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-74724/" target="_blank">Sun et al. (2015)</a></li>-->
-			<#--<li><a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-1030/" target="_blank">Wu et al. (2012)</a></li>-->
-			<#--<li>Zhang et al. (2014) <a href="http://www.ncbi.nlm.nih.gov/pubmed/25186741" target="_blank">Pubmed</a> <a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-52564/" target="_blank">Data</a></li>-->
-		<#--</ul>-->
 		</table>
         <hr>
         <h4>Citation</h4>
