@@ -8,24 +8,25 @@
       <div class="modal-body">
 		<p>
 			The Brain interactive sequencing analysis tool (BRAIN-sat) is a comprehensive web-based tool to access and analyze neuronal transcriptome data. <br/>
-			The tool has several features that can be accessed by using the drop-down menu: 
+			The tool has several features that can be accessed by using the drop-down menu:
 			<ul>
 				<li>Differential gene expression (DE) analysis</li>
 				<li>Quantitative gene expression (QE) analysis</li>
-          		<li>Single cell RNA sequencing (scRNA) analysis</li>
+				<li>Single cell RNA sequencing (scRNA) analysis</li>
 			</ul>
 			<br/>
 			<div class="btn-group btn-group-justified computerContent">
 				<div class="btn-group"><button class="btn btn-default tutorialDEinfo" type="button" data-toggle="collapse" data-target="#DEanalysis" aria-expanded="false">Differential gene expression analysis</button></div>
 				<div class="btn-group"><button class="btn btn-default tutorialQEinfo" type="button" data-toggle="collapse" data-target="#QEanalysis" aria-expanded="false">Quantitative gene expression analysis</button></div>
-                <div class="btn-group"><button class="btn btn-default tutorialscRNAinfo" type="button" data-toggle="collapse" data-target="#SCRNAanalysis" aria-expanded="false">Single cell RNA sequencing analysis</button></div>
+				<div class="btn-group"><button class="btn btn-default tutorialscRNAinfo" type="button" data-toggle="collapse" data-target="#SCRNAanalysis" aria-expanded="false">Single cell RNA sequencing analysis</button></div>
 			</div>
-			
+
 			<div class="btn-group btn-group-justified mobileContent">
 				<div class="btn-group"><button class="btn btn-default tutorialDEinfo" type="button" data-toggle="collapse" data-target="#DEanalysis" aria-expanded="false">DE</button></div>
 				<div class="btn-group"><button class="btn btn-default tutorialQEinfo" type="button" data-toggle="collapse" data-target="#QEanalysis" aria-expanded="false">QE</button></div>
-                <div class="btn-group"><button class="btn btn-default tutorialscRNAinfo" type="button" data-toggle="collapse" data-target="#SCRNAanalysis" aria-expanded="false">scRNA</button></div>
+				<div class="btn-group"><button class="btn btn-default tutorialscRNAinfo" type="button" data-toggle="collapse" data-target="#SCRNAanalysis" aria-expanded="false">scRNA</button></div>
 			</div>
+		  <hr>
 			<div class="collapse" id="DEanalysis">
 			  <div class="well">
 			  	The Differential Expression (DE) analysis can be used to generate gene lists differentially expressed genes with the associated log fold changes and multiple testing corrected p-values between two conditions of interest (A vs. B). <br/>

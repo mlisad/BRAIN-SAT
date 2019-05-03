@@ -52,6 +52,16 @@ function createScatterPlot(datatable, title){
         plot_bgcolor: 'rgba(0,0,0,0)',
         autosize: false
     };
+
+    var options = {
+        showLink: false, // removes the link to edit on plotly - works
+        displaylogo: false,
+        scrollZoom: true,
+        modeBarButtonsToRemove: ['zoom2d', 'select2d', 'pan', 'pan2d', 'lasso2d', 'autoScale2d', 'sendDataToCloud',
+            'toggleSpikelines', 'hoverClosestCartesian', 'hoverCompareCartesian', 'zoomIn2d', 'zoomOut2d',
+            'resetScale2d', 'hoverClosestPie']
+    };
+
     // Create a plot with traces and layout.
-    Plotly.newPlot('scatterplot', traces, layout, {scrollZoom: true});
+    Plotly.newPlot('scatterplot', traces, layout, options);
 }

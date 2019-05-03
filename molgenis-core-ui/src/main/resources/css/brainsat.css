@@ -93,10 +93,10 @@ text.label {
   margin-bottom:5px;
 }
 
-#tutorialButton{
-  border:0px;
-  background-color:transparent;
-}
+/*#tutorialButton{*/
+  /*border:0px;*/
+  /*background-color:transparent;*/
+/*}*/
 
 #closeModal{
   color:#ffffff !important; 
@@ -123,7 +123,7 @@ text.label {
   margin-bottom:5px;
 }
 
-#selectBar, #contactInfo, #selectBarMessage, #errorLengthForSubmit,
+#selectBar, #selectBarMessage, #errorLengthForSubmit,
 #publicationPart, #refreshPublications, #QE_content, #searchQE, 
 #QE_table, #searchBar_DE, #genePart, #dashboard, #analysis_info, 
 #DownloadQE, #selectBarQE, #NoDEGMessage, #materialInfo, #hiddenQEtext, 

@@ -1,25 +1,22 @@
 <#include "molgenis-header.ftl">
 <#include "molgenis-footer.ftl">
 
-<#assign css=["brainsat.css", "jquery-ui.css", "QE_BargraphBRAINSAT.css", "typeahead.css"]>
-<#assign js=["brainsatmanager.js", "brainsatPublicationPart.js", "brainsatScatterPlot.js", "brainsatBarGraph.js", "brainsatFunctions.js", "plotly-latest.min.js", "jquery-ui.js", "sorttable.js", "html2canvas.js","html2canvas.svg.js"]>
+<#assign css=["brainsat.css", "jquery-ui.css", "QE_BargraphBRAINSAT.css", "typeahead.css", "tooltipster.bundle.min.css"]>
+<#assign js=["brainsatmanager.js", "brainsatPublicationPart.js", "brainsatScatterPlot.js", "brainsatBarGraph.js", "brainsatFunctions.js", "plotly-latest.min.js", "jquery-ui.js", "sorttable.js", "tooltipster.bundle.min.js"]>
 
 <@header css js/>
 <div class="container">
-	<#--<img id="goadImage" src="/img/testLogoGOAD.png" alt="" width="20%" height="20%" />-->
-	<#--<a href="http://www.umcg.nl/NL/Zorg/paginas/Default.aspx">-->
-		<#--<img id="umcgImage" src="https://www.umcg.nl/width/204/height/112/imageMaxWidth/204/imageMaxHeight/112/imageVAlign/mid/imageHAlign/mid/image/L19sYXlvdXRzLzE1L1VtY2dQb3J0YWwvaW1hZ2VzL2xvZ29fdW1jZy5wbmc=/Canvas.ashx" alt="" width="20%" height="20%" />-->
-	<#--</a>-->
 	<div class="btn-group btn-group-justified">
 		<div id="homeButton" class="btn-group returnButton"><button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></button></div>
-        <div id="informationButton" class="btn-group"><button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button></div>
-        <div id="contactButton" class="btn-group"><button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button></div>
+        <div id="tutorialButtonDiv" class="btn-group"><button id="tutorialButton" class="btn btn-primary" type="button" data-toggle="modal" data-target="#tutorialModal"><span class="glyphicon glyphicon-education" aria-hidden="true"></span></button></div>
+        <div id="informationButton" class="btn-group"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#settingsModal"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button></div>
+        <div id="contactButton" class="btn-group"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#contactModal"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button></div>
         <div id="divEmptyButton" class="btn-group"><button class="btn btn-primary disabled" type="button">&nbsp;</button></div>
-	</div>	<div class="well">
+	</div>
+    <div class="well">
         <h2>Welcome to the <span style="text-decoration: underline;"><b>bra</b></span>in <span style="text-decoration: underline;"><b>in</b></span>teractive <span style="text-decoration: underline;"><b>s</b></span>equencing <span style="text-decoration: underline;"><b>a</b></span>nalysis <span style="text-decoration: underline;"><b>t</b></span>ool (BRAIN-sat)</h2>        <img id="goadImage" src="/img/logoBRAINSAT2.png" alt="" width="25%" height="25%" />
         BRAIN-sat is an interactive online platform that contains preprocessed data to enables analyses of public available studies. <br/>
-        This preprocessing enables the interactive analyses as searching for genes, quantitative and differentially expression analysis. <br/>
-		For more information about the features of BRAIN-sat, click<button id="tutorialButton" data-toggle="modal" data-target="#tutorialModal"><u>here</u></button>for the tutorial. <br/>
+        This pre-processing enables the interactive analyses as searching for genes, quantitative and differentially expression analysis. <br/>
         <br/>
         If you have suggestions or questions regarding BRAIN-sat, please feel free to contact us.
         <br/>
@@ -72,8 +69,17 @@
 	<#include "brainsat-informationPage.ftl">
 	<div id="genePart">
 		<div class="well">
-			<div id="geneInformation"></div> 
-			<#--<div id='dashboard'></div>-->
+
+            <div id="genePartSearch" class="input-group pull-left col-md-4 col-md-offset-8">
+                <span class="input-group-btn">
+                    <button id="geneSearchOnPage" class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                <input id="geneTextOnPage" type="text" class="form-control searchGene ui-autocomplete-input" placeholder="Search for..." autocomplete="off">
+            </div>
+			<div id="geneInformation"></div>
 			<button type="button" id="returnTPM" class="btn btn-default btn-block returnButton"><span id="leftArrow" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
 		</div>
 	</div>

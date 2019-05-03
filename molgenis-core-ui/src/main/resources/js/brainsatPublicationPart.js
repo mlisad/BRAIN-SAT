@@ -7,12 +7,12 @@
 $(document).ready(function () {
 	
 	//-------------------------------------------------//
-	//Global functions of the publication part of BRAINSET.//
+	//Global functions of the publication part of BRAINSAT.//
 	//-------------------------------------------------//
 	
 	// When clicking upon a study within the studyTable.
 	$("body").on("click", ".studyTable", function(){
-		$("#DownloadScatterplot").hide();
+		// $("#DownloadScatterplot").hide();
 		// Creates a tooltip when hovering on the studyTable	
 		$('.studyTable').tooltip(); 
 	
@@ -121,7 +121,7 @@ $(document).ready(function () {
 		$("#DETableContent").hide();
 		$("#scatterplot").empty();
 		$(".row.DE").hide();
-		$("#DownloadScatterplot").hide();
+		// $("#DownloadScatterplot").hide();
 		$(".loader").show();
 
 		// When there are two conditions chosen the API for the scatterplot and the DE table is called.
@@ -199,7 +199,7 @@ $(document).ready(function () {
 							$("#DETable").show();
                             createScatterPlot(tableContentDE, DEtitle.replace(/-/g,' '));
 							$("#DEcontent").show();
-							$("#searchBar_DE").show()
+							$("#searchBar_DE").show();
 							$("#DETableContent").show();
 							$("#scatterplot").show();
 							$(".row.DE").show();
@@ -221,14 +221,14 @@ $(document).ready(function () {
 	
 	// When clicking upon the submit QE button
 	$("body").on("click", ".QEbutton", function(){
-		// The table-scroll is emptied when clicking the DE submit button
+		// The table-scroll is emptied when clicking the QE submit button
 		// and the for-control is reset.
 		$(".table-scroll").empty();
 		$(".form-control").trigger("reset");
 
-        geneSearch(GEODOnPage[0], ".genelist", true);
 		hideDE();
-        enterSearch("geneBarGraph", "searchGeneBarGraph")
+        geneSearch(GEODOnPage[0], ".genelist", true);
+        enterSearch("geneBarGraph", "searchGeneBarGraph");
 	});
 
 	$("body").on("click", "#searchGeneBarGraph", function(){
@@ -238,7 +238,7 @@ $(document).ready(function () {
 	// The function searchbar enables the search function within the datatable layout.
 	// It is an interactive way of filtering that checks the search term while typing.
 	$("body").on("click", "#searchGeneTable", function(){
-		// The pattern given in the search bar is used to match the beginning of genes 
+		// The pattern given in the search bar is used to match the beginning of genes
 		var rex = new ("^"+$("#geneTableQE").val(), 'i');
 		// All of the content within the table is hidden
 		$('.searchable tr').hide();

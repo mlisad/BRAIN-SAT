@@ -1,6 +1,6 @@
 <div id="publicationPart">
 	<div id="informationStudy"></div>
-	<button type="button" class="btn btn-primary btn-block disabled" id="RnaSeq" type="button" data-toggle="collapse" data-target="#rnaSeqCollapse" aria-expanded="false" aria-controls="rnaSeqCollapse">RNA Sequencing</button>
+	<button type="button" class="btn btn-primary btn-block disabled" id="RnaSeq" data-toggle="collapse" data-target="#rnaSeqCollapse" aria-expanded="false" aria-controls="rnaSeqCollapse">RNA Sequencing</button>
 	<div class="collapse" id="rnaSeqCollapse">
 		<div class="well">
 			<div id="conditions"></div>
@@ -42,19 +42,27 @@
 			<br/>
 			
 			<div id="QE_content">
-				<div class="col-md-4 col-md-offset-8 input-group pull-right">
+                <div id="TPMdiv" class="col-md-12 row">
+					<div id='geneName' class="col-md-8"></div>
+
+
+                    <div class="col-md-4 input-group pull-right">
 					<span class="input-group-btn">
 						<button id="searchGeneBarGraph" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 					</span>
-					<input id="geneBarGraph" class="form-control genelist" type="text" placeholder="Search Gene">
-				</div>
-				<br/>
+                        <input id="geneBarGraph" class="form-control genelist" type="text" placeholder="Search Gene">
+                    </div>
+                </div>
 
-				<div id="TPMdiv" class="col-md-12">
-				</div>
-				<div class="col-md-12 text-center">
-					<button type="button" id="DownloadTPMGraph" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Download TPM graph</button>
-				</div>
+				<#--<br/>-->
+
+				<#--<div id="TPMdiv" class="col-md-12">-->
+
+
+				<#--</div>-->
+				<#--<div class="col-md-12 text-center">-->
+					<#--<button type="button" id="DownloadTPMGraph" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Download TPM graph</button>-->
+				<#--</div>-->
 			</div>
 			
 			<div id="selectBar" class="DE">
@@ -69,17 +77,17 @@
 			<div id="DEcollection" class="row DE">
 				<div id="scatterplot" class="col-md-7 DE"></div>
 				<div id="DETableContent" class="col-md-5 DE">
-					<div id="searchBar_DE" class="input-group DE">				
+					<div id="searchBar_DE" class="input-group DE">
 						<input id="DEsearch" class="form-control" type="text" placeholder="Search gene..." />
 					</div>
 					<br/>
 					<br/>
 					<div id="DETable" class="col-md-12 table-scroll"></div>
 				</div>
-				<br/>
-				<div class="col-md-12 text-center row">
-					<button type="button" id="DownloadScatterplot" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>Download Scatterplot</button>
-				</div>
+				<#--<br/>-->
+				<#--<div class="col-md-12 text-center row">-->
+					<#--<button type="button" id="DownloadScatterplot" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>Download Scatterplot</button>-->
+				<#--</div>-->
 			</div>
 		</div>
 	</div>
@@ -135,11 +143,11 @@
          }
 
          function removejscssfile(filename, filetype){
-             var targetelement=(filetype=="js")? "script" : (filetype=="css")? "link" : "none"; //determine element type to create nodelist from
-             var targetattr=(filetype=="js")? "src" : (filetype=="css")? "href" : "none"; //determine corresponding attribute to test for
+             var targetelement=(filetype==="js")? "script" : (filetype==="css")? "link" : "none"; //determine element type to create nodelist from
+             var targetattr=(filetype==="js")? "src" : (filetype==="css")? "href" : "none"; //determine corresponding attribute to test for
              var allsuspects=document.getElementsByTagName(targetelement);
              for (var i=allsuspects.length; i>=0; i--){ //search backwards within nodelist for matching elements to remove
-                 if (allsuspects[i] && allsuspects[i].getAttribute(targetattr)!=null && allsuspects[i].getAttribute(targetattr).indexOf(filename)!=-1)
+                 if (allsuspects[i] && allsuspects[i].getAttribute(targetattr)!=null && allsuspects[i].getAttribute(targetattr).indexOf(filename)!==-1)
                      allsuspects[i].parentNode.removeChild(allsuspects[i]) //remove element by calling parentNode.removeChild()
              }
          }
