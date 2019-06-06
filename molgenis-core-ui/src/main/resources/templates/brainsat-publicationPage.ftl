@@ -1,4 +1,4 @@
-<div id="publicationPart">
+<div id="publicationPart" xmlns="http://www.w3.org/1999/html">
 	<div id="informationStudy"></div>
 	<button type="button" class="btn btn-primary btn-block disabled" id="RnaSeq" data-toggle="collapse" data-target="#rnaSeqCollapse" aria-expanded="false" aria-controls="rnaSeqCollapse">RNA Sequencing</button>
 	<div class="collapse" id="rnaSeqCollapse">
@@ -7,25 +7,26 @@
 			<div id="errorLengthForSubmit" class="alert alert-danger" role="alert">
 				<strong>Oops!</strong> You have to fill in two conditions before continuing!
 			</div>
+
 			<div id="selectBarMessage" class="alert alert-danger" role="alert">
 				<strong>Oops!</strong> This study cannot be used for the differentially expression analysis since it contains one condition.
 			</div>
+
 			<div id="NoDEGMessage" class="alert alert-danger" role="alert">
 						<strong>Oops!</strong> No significant differentially expressed genes where found.<br/>Please try again.
 			</div>
 
-			
-				<div id="analysis_info">
-					<strong>Quantitative Expression (QE)</strong> analysis can be used to determine which genes are expressed in particular cell type and to what degree. <br/>
-					<strong>Differential Expression (DE)</strong> analysis can be used to generate gene lists containing differentially expressed genes with the associated log fold changes and multiple testing corrected p-values between two conditions of interest (A vs. B).
-				</div>
-			
+			<div id="analysis_info">
+				<strong>Quantitative Expression (QE)</strong> analysis can be used to determine which genes are expressed in particular cell type and to what degree. <br/>
+				<strong>Differential Expression (DE)</strong> analysis can be used to generate gene lists containing differentially expressed genes with the associated log fold changes and multiple testing corrected p-values between two conditions of interest (A vs. B).
+			</div>
+
 			<div class="computerContent btn-group btn-group-justified">
 				<div class="btn-group">
-					<button type="button" class="btn btn-default btn-responsive QEbutton">Quantitative Expression Analysis</button>
+					<button type="button" class="btn btn-default btn-responsive QEbutton"> Quantitative Expression Analysis </button>
 				</div>
-				<div class="btn-group">
-					<button type="button" class="btn btn-default btn-responsive DEbutton">Differential Expression Analysis </button>
+                <div class="btn-group">
+					<button type="button" class="btn btn-default btn-responsive DEbutton"> Differential Expression Analysis </button>
 				</div>
 			</div>
 			
@@ -37,32 +38,48 @@
 					<button type="button" class="btn btn-default btn-responsive DEbutton">DE</button>
 				</div>
 			</div>
-			
-			
+
 			<br/>
-			
+
 			<div id="QE_content">
+                <div class="tooltip pull-right">
+                    <span id="QEHelp" class="tooltipSearch glyphicon glyphicon-info-sign"> </span>
+                    <span class="tooltiptext rightSideHelp">
+                    <div class="row">
+                        <div class="col-md-6"><h2>Example:</h2>
+                            <hr>
+                            <img src="/img/QE_analysis_example.png" width="100%" class="center-block"/>
+                        </div>
+                        <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+                            <h2>Explanation:</h2>
+								<hr>
+								A bar plot is used to visualize the quantitative expression (QE) analysis.
+								The abundance of the different conditions (x-axis) are calculated to TPM values and the TPM values are represented on the y-axis.
+								(1) Each of the bar plots is indicated with an error bar based on the sample with the lowest and the TPM value in the condition.
+								(2) Is the bar plot of the condition, the colors of the bar are based on the percentile group.
+								A percentiles are calculated based on the distribution of the abundance for each condition. <br>
+								<br>
+								<img src="/img/colorscale.png" width="50%" class="center-block"/><br>
+								<br>
+								These percentile groups consists of 13 divisions (see color bar), from not (significantly) expressed (grey) until very high expressed, 0-5 percentile (red).
+								This information is given when hovering over the bar plot (3).
+								(4) To save the bar plot, click this image.
+                        </div>
+                    </div>
+                </span>
+                </div>
+
                 <div id="TPMdiv" class="col-md-12 row">
-					<div id='geneName' class="col-md-8"></div>
-
-
+					<div id="geneName" class="col-md-8"></div>
                     <div class="col-md-4 input-group pull-right">
 					<span class="input-group-btn">
 						<button id="searchGeneBarGraph" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 					</span>
                         <input id="geneBarGraph" class="form-control genelist" type="text" placeholder="Search Gene">
                     </div>
+
+                    <br>
                 </div>
-
-				<#--<br/>-->
-
-				<#--<div id="TPMdiv" class="col-md-12">-->
-
-
-				<#--</div>-->
-				<#--<div class="col-md-12 text-center">-->
-					<#--<button type="button" id="DownloadTPMGraph" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Download TPM graph</button>-->
-				<#--</div>-->
 			</div>
 			
 			<div id="selectBar" class="DE">
@@ -74,6 +91,29 @@
 			<br/>
 			<br/>
             <div class="loader" style="display:none;"></div>
+            <div class="tooltip col-md-7">
+                <span id="DEHelp" class="tooltipSearch glyphicon glyphicon-info-sign pull-right"> </span>
+                <span class="tooltiptext">
+                    <div class="row">
+                        <div class="col-md-6"><h2>Example:</h2>
+                            <hr>
+                            <img src="/img/DE_analysis_example.png" width="100%" class="center-block"/>
+                        </div>
+                        <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+                            <h2>Explanation:</h2>
+                            <hr>
+								The differential expression (DE) analysis is visualized with a volcano plot.
+								The x-axis represents the logFC and the y-axis consist of the -log10(FDR).
+								The title of plot (1) indicates which conditions are compared.
+								In the example figure, astrocytes and neurons are compared.
+								Genes that are more highly expressed in the Neurons are in the  right side of the volcano plot (3) and the left side (2) consist of genes that are more highly expressed in the astrocytes.
+								More information is provided when you hover over the dots(4), consisting of the precise logFC, -log10(FDR) and the gene symbol.
+								For download purposes the following button can be used (5).
+                        </div>
+                    </div>
+                </span>
+            </div>
+
 			<div id="DEcollection" class="row DE">
 				<div id="scatterplot" class="col-md-7 DE"></div>
 				<div id="DETableContent" class="col-md-5 DE">
@@ -84,74 +124,72 @@
 					<br/>
 					<div id="DETable" class="col-md-12 table-scroll"></div>
 				</div>
-				<#--<br/>-->
-				<#--<div class="col-md-12 text-center row">-->
-					<#--<button type="button" id="DownloadScatterplot" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>Download Scatterplot</button>-->
-				<#--</div>-->
 			</div>
 		</div>
 	</div>
-	<#--<div id="container2"></div>-->
 
 	<#include "resource-macros.ftl">
-	<button type="button" class="btn btn-primary btn-block disabled" id="SingleCell" data-toggle="collapse" data-target="#singleCellCollapse" aria-expanded="false" aria-controls="singleCellCollapse">Single Cell RNA Sequencing</button>
-    <div id="singleCellCollapse">
+
+	<button type="button" class="btn btn-primary btn-block disabled" id="SingleCell" data-toggle="collapse" data-target="#singleCellCollapse" aria-expanded="false" aria-controls="singleCellCollapse"> Single Cell RNA Sequencing </button>
+    <div class="tooltip pull-right">
+        <span id="SingleCellHelp" class="tooltipSearch glyphicon glyphicon-info-sign"> </span>
+		<#--<button type="button" class="btn btn-primary" id="SingleCellHelp"> scRNA figure explanation </button>-->
+		<span class="tooltiptext rightSideHelp">
+			<div class="row">
+				<div class="col-md-6"><h2>Example:</h2>
+					<hr>
+					<img src="/img/scRNA_analysis_example_tsne.png" width="60%" class="center-block">
+				</div>
+				<div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+					<h2>Explanation:</h2>
+					<hr>
+					The t-sne consists of several elements that might be useful for your analysis.
+					Initially the only variation is based on the different conditions (see legend).
+					The transparency of the samples is changed (1) when a gene is searched in the data.
+					A solid dot represents in percentages the highest value and a 'see through' dot means that the gene abundance (CPM) is a low value (or even 0).
+					Hovering over the dots enables a label that shows the sample name and conditions it was found (2).
+					The t-sne can be downloaded when you click on the camera (3).
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6"><h2>Example:</h2>
+					<hr>
+					<img src="/img/scRNA_analysis_example_tsne.png" width="60%" class="center-block">
+				</div>
+				<div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+					<h2>Explanation:</h2>
+					<hr>
+					The t-sne consists of several elements that might be useful for your analysis.
+					Initially the only variation is based on the different conditions (see legend).
+					The transparency of the samples is changed (1) when a gene is searched in the data.
+					A solid dot represents in percentages the highest value and a 'see through' dot means that the gene abundance (CPM) is a low value (or even 0).
+					Hovering over the dots enables a label that shows the sample name and conditions it was found (2).
+					The t-sne can be downloaded when you click on the camera (3).
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6"><h2>Example:</h2>
+					<hr>
+					<img src="/img/scRNA_analysis_example_piechard.png" width="60%" class="center-block">
+				</div>
+				<div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+					<h2>Explanation:</h2>
+					<hr>
+					The pie card is the figure that explains the distribution of all variance.
+					Explaining which condition has the most expression of a gene.
+					Each of the conditions is draw in the pie chard (1), including the percentage (2).
+					This percentage is calculated by dividing the CPM of the samples in one condition by the CPM value of all samples.
+					Hovering over a condition enables a label (3).
+					By clicking on the following button, this image can be downloaded (4).
+				</div>
+			</div>
+		</span>
+    </div>
+
+	<div id="singleCellCollapse">
         	<div id="app"></div>
 	</div>
-
-    <script>
-         $("#SingleCell").on("click", function () {
-             $("#singleCellCollapse").collapse('show');
-             if (document.getElementById("tSNEplot")) {
-                 document.getElementById("tSNEplot").innerHTML = "";
-		 	}
-             $("#tSNEplot").show();
-             $("#searchGenetSne").show();
-             $("#searchGeneInput").show();
-             var GEODName = GEODOnPage[0];
-             if (GEODName !== '') {
-                 window.__INITIAL_STATE__ = GEODName.replace(/-/g,'');
-             }
-             if (appLoaded) {
-                 removejscssfile("/js/singlecell/app.js", "js");
-                 removejscssfile("/js/singlecell/vendor.js", "js");
-                 removejscssfile("/js/singlecell/manifest.js", "js");
-                 reloadAgain = true
-             } else {
-                 loadVue();
-             }
-
-             if (reloadAgain) {
-                 loadVue();
-                 reloadAgain = false;
-             }
-
-         });
-         var appLoaded = false;
-         var reloadAgain = false;
-         $(document).ready(function () {
-         });
-
-         function loadVue() {
-             $.getScript("/js/singlecell/manifest.js", function (data, textStatus, jqxhr) {
-                 $.getScript("/js/singlecell/vendor.js", function (data, textStatus, jqxhr) {
-                     $.getScript("/js/singlecell/app.js", function (data, textStatus, jqxhr) {
-                         appLoaded = true;
-                     });
-                 });
-             });
-         }
-
-         function removejscssfile(filename, filetype){
-             var targetelement=(filetype==="js")? "script" : (filetype==="css")? "link" : "none"; //determine element type to create nodelist from
-             var targetattr=(filetype==="js")? "src" : (filetype==="css")? "href" : "none"; //determine corresponding attribute to test for
-             var allsuspects=document.getElementsByTagName(targetelement);
-             for (var i=allsuspects.length; i>=0; i--){ //search backwards within nodelist for matching elements to remove
-                 if (allsuspects[i] && allsuspects[i].getAttribute(targetattr)!=null && allsuspects[i].getAttribute(targetattr).indexOf(filename)!==-1)
-                     allsuspects[i].parentNode.removeChild(allsuspects[i]) //remove element by calling parentNode.removeChild()
-             }
-         }
-
-	 </script>
 	<button type="button" id="returnAccordion" class="btn btn-default btn-block returnButton"><span id="leftArrow" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
 </div>

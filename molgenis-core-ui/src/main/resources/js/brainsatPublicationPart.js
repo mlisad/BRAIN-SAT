@@ -44,7 +44,8 @@ $(document).ready(function () {
 					studyInformation.push(
 						"<b>Title:</b> " + data[i]["Title"] + "<br/>"
 						+ "<b>Author:</b> " + data[i]["Author"] + "<br/>"
-						+ "<b>Publication year:</b> " + data[i]["Year"]);
+						+ "<b>Publication year:</b> " + data[i]["Year"] + "<br/>"
+                        + "<b>Organism:</b> " + data[i]["Organism"]);
 					// The GEOD number is pushed so it can be used for calling the R API's.
 					GEODOnPage.push(data[i]["GEOD_NR"]);
 					organismOnPage.push(data[i]["Organism"]);
@@ -107,6 +108,7 @@ $(document).ready(function () {
 	});
 
 	$("body").on("click", "#submitDEbutton", function(){
+        $('html,body').scrollTop(0);
 		// The table-scroll is emptied when clicking the DE submit button
 		// and the for-control is reset.
 		// The modal that holds the loading bar is hidden.
@@ -121,8 +123,8 @@ $(document).ready(function () {
 		$("#DETableContent").hide();
 		$("#scatterplot").empty();
 		$(".row.DE").hide();
-		// $("#DownloadScatterplot").hide();
 		$(".loader").show();
+		// $("#DEHelp").show();
 
 		// When there are two conditions chosen the API for the scatterplot and the DE table is called.
 		var count = $("#selectConditions :selected").length;
@@ -159,6 +161,7 @@ $(document).ready(function () {
 						if (data.startsWith('Login success[1] "No differentially expressed genes where found')) {
 							$("#NoDEGMessage").show();
                             $(".loader").hide();
+                            $("#DEHelp").hide();
 						} else {
 							// The DE table is added to the div DETable.
 							$("#DETable").append(
@@ -202,9 +205,11 @@ $(document).ready(function () {
 							$("#searchBar_DE").show();
 							$("#DETableContent").show();
 							$("#scatterplot").show();
+							$("#scatterplotHelp").show();
 							$(".row.DE").show();
 							searchBar("#DEsearch");
                             $(".loader").hide();
+                            $("#DEHelp").show();
 				}
 				});
 			}
@@ -221,18 +226,20 @@ $(document).ready(function () {
 	
 	// When clicking upon the submit QE button
 	$("body").on("click", ".QEbutton", function(){
+        $('html,body').scrollTop(0);
 		// The table-scroll is emptied when clicking the QE submit button
 		// and the for-control is reset.
 		$(".table-scroll").empty();
 		$(".form-control").trigger("reset");
 
 		hideDE();
+        availableGenes = [];
         geneSearch(GEODOnPage[0], ".genelist", true);
         enterSearch("geneBarGraph", "searchGeneBarGraph");
 	});
 
 	$("body").on("click", "#searchGeneBarGraph", function(){
-		obtainTPMofGenes(GEODOnPage[0].replace(/-/g,''), $("#geneBarGraph").val(), "qeAnalysis", organismOnPage);
+		obtainTPMofGenes(GEODOnPage[0].replace(/-/g,''), $("#geneBarGraph").val(), organismOnPage);
 	});
 
 	// The function searchbar enables the search function within the datatable layout.
@@ -248,5 +255,55 @@ $(document).ready(function () {
 		}).show();
 
 	});
-	
+
+    $("#SingleCell").on("click", function () {
+        $('html,body').scrollTop(0);
+        $("#singleCellCollapse").collapse('show');
+        $("#SingleCellHelp").show();
+
+        if (document.getElementById("tSNEplot")) {
+            document.getElementById("tSNEplot").innerHTML = "";
+        }
+        if (document.getElementById("barplotVis")) {
+            document.getElementById("barplotVis").innerHTML = "";
+        }
+        if (document.getElementById("pieChartVis")) {
+            document.getElementById("pieChartVis").innerHTML = "";
+        }
+
+        // $("#tSNEplot").show();
+        // $("#tSNEplot").append('' +
+        //     '<span id="tooltipSCtsne" class="tooltipSC glyphicon glyphicon-info-sign" data-tooltip-content="#tooltip_contentSCtsne"> </span>' +
+        //     '    <div class="tooltip_templates">' +
+        //     '        <div id="tooltip_contentSCtsne">' +
+        //     '            <div class="row">' +
+        //     '                <div class="col-md-6"><h2>Example:</h2>' +
+        //     '                    <hr>' +
+        //     '                    <img src="/img/scRNA_analysis_example_tsne.png" width="60%"/></div>' +
+        //     '                <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">' +
+        //     '                    <h2>Explanation:</h2>' +
+        //     '                    <hr>' +
+        //     '                    The t-sne consists of several elements that might be useful for your analysis.' +
+        //     '                    Initially the only variation is based on the different conditions (see legend).' +
+        //     '                    The transparency of the samples is changed (1) when a gene is searched in the data.' +
+        //     '                    A solid dot represents in percentages the highest value and a \'see through\' dot means that the gene abundance (CPM) is a low value (or even 0).' +
+        //     '                    Hovering over the dots enables a label that shows the sample name and conditions it was found (2).' +
+        //     '                    The t-sne can be downloaded when you click on the camera (3).' +
+        //     '                </div>' +
+        //     '            </div>' +
+        //     '        </div>' +
+        //     '    </div>');
+        // $('#tooltipSCtsne').tooltipster();
+
+        $("#searchGenetSne").show();
+        $("#searchGeneInput").show();
+
+        if (GEODOnPage[0] !== '') {
+            window.__INITIAL_STATE__ = GEODOnPage[0].replace(/-/g,'');
+        }
+
+        loadVue();
+    });
+
+
 });

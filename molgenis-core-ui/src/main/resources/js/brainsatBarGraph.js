@@ -38,11 +38,7 @@ function createBarGraph(data, divToAdd, parentDiv, qeAnalysis) {
     // The average count is saved to calculate the difference of the high and the low abundance
     var averageCount = [];
     // The value to adjust the bottom margin
-    var bottomMarigin = 50;
-
-    if (qeAnalysis === true) {
-        bottomMarigin = 120
-    }
+    var bottomMarigin = 120;
 
     // Looping through the data[0] object
     $.each(data[0], function(i, item) {

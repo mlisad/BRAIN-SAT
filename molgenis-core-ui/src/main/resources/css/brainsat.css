@@ -3,8 +3,6 @@
  * @Author Mldubbelaar
  */
 
-#crowbar-workspace, #svgdataurl, #pngdataurl, #downloadScatter{display: none;}
-
 .svgTitle {
 	font-size:18px;	
 }
@@ -16,12 +14,8 @@
     line-height: 1;
     border-radius:3px;
   }
-  
-  svg.tpmValsPlot > g > .legend {
-  	display:none;
-  }
-  
-  .computerContent,#DownloadTPMGraph,#DownloadQETable,#DEdownloadButtons{
+
+  .computerContent {
   	display:none;
   }
   .mobileContent {
@@ -33,12 +27,8 @@
   .btn-responsive {
     font-size:100%;
   }
-  
-   svg.tpmValsPlot > g > .legend {
-  	display:block;
-  }
-  
-  .computerContent,#DownloadTPMGraph,#DownloadQETable,#DEdownloadButtons {
+
+  .computerContent {
   	display:block;
   }
   .mobileContent {
@@ -50,15 +40,7 @@ text.label {
 	transform:translate(25,12.5) !important;
 }
 
-#goadImage{
-  float:right;
-}
-
-/*#umcgImage{*/
-  /*float:right;*/
-/*}*/
-
-#rugImage{
+#brainSatImage{
   float:right;
 }
 
@@ -70,21 +52,13 @@ text.label {
   color:#000000;  
 }
 
-.btn-primary, .btn.disabled, .downloadButton{
+.btn-primary, .btn.disabled {
   border:0px;
   background-color:#519ABC;
   margin-bottom:5px;
 }
 
-.downloadButton{
-	 border:0px;
-  background-color:#519ABC;
-  margin-bottom:5px;
-  font-color:white;
-	
-}
-
-#publicationDiv, #dashboard, #TPMdiv{
+#dashboard, #TPMdiv{
 	overflow-x:auto;
 }
 
@@ -93,13 +67,8 @@ text.label {
   margin-bottom:5px;
 }
 
-/*#tutorialButton{*/
-  /*border:0px;*/
-  /*background-color:transparent;*/
-/*}*/
-
 #closeModal{
-  color:#ffffff !important; 
+  color:#000 !important;
 }
 
 .modal-title{
@@ -112,22 +81,13 @@ text.label {
   cursor:pointer;
 }
 
-#tutorialDEinfo, #tutorialQEinfo{
-  border:0px;
-  background-color:#519ABC;
-  margin-bottom:5px;
-  color:#ffffff;
-}
-
 #QETable, #searchBar_QE{
   margin-bottom:5px;
 }
 
 #selectBar, #selectBarMessage, #errorLengthForSubmit,
-#publicationPart, #refreshPublications, #QE_content, #searchQE, 
-#QE_table, #searchBar_DE, #genePart, #dashboard, #analysis_info, 
-#DownloadQE, #selectBarQE, #NoDEGMessage, #materialInfo, #hiddenQEtext, 
-#DownloadQETable{
+#publicationPart, #QE_content, #searchBar_DE, #genePart, #dashboard, #analysis_info,
+#NoDEGMessage, #SingleCellHelp, #DEHelp{
   display:none;
   margin-bottom:1em;
 }
@@ -193,6 +153,44 @@ text.label {
   100% { transform: rotate(360deg); }
 }
 
-.underline {
-  text-decoration: underline;
+.underline { text-decoration: underline; }
+.tooltip_templates { display: none; }
+
+/* hides the svg dom element that has the click handler responsible for toggling */
+#geneInformation .legend .traces .legendtoggle { display: none; }
+/* hides the svg dom element that has the click handler responsible for toggling */
+#geneInformation .legend .traces .legendtext { cursor: default; }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  color: #fff;
+  /*text-align: center;*/
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -50%; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  /*transition: 1s all ease;*/
+  transition-delay: 1s;
+}
+
+.tooltip .tooltiptext.rightSideHelp  {
+  width: 5000%;
+  margin-left: -4950%;
 }

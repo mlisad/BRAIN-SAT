@@ -3,9 +3,47 @@
  * @Author Mldubbelaar
  */
 
+function loadVue() {
+    $.getScript("/js/singlecell/manifest.js", function (data, textStatus, jqxhr) {
+        $.getScript("/js/singlecell/vendor.js", function (data, textStatus, jqxhr) {
+            $.getScript("/js/singlecell/app.js", function (data, textStatus, jqxhr) {
+
+            });
+        });
+    });
+}
+
+function geneSearched(divID) {
+    var divName = $(divID);
+    $("#geneNameSearch").empty();
+    $("#geneSearchPlot").empty();
+    fillGeneSearch(divName.val());
+
+    // The accordion is reseted to the 'normal' state.
+    $('#collapseOne').collapse("show");
+    $('#collapseTwo').collapse("hide");
+    // A return button is shown.
+    $("#returnTPM").show();
+    // $(".legend").remove();
+    // The accordion is hidden.
+    $("#accordion").hide();
+    // The gene part is shown (part with the dashboards).
+    $("#genePart").show();
+    // The search value is cleared.
+    $('#geneText').val("");
+    divName.val("");
+
+    if (divID === "#geneText") {
+        availableGenes = [];
+        geneSearch("combinedMatrixSearch", "#geneTextOnPage", false);
+        // geneSearch(studiesSearch[0], "#geneTextOnPage", false);
+        enterSearch("geneTextOnPage", "geneSearchOnPage");
+    }
+}
+
 // The function searchbar enables the search function within the datatable layout.
 // It is an interactive way of filtering that checks the search term while typing.
-function searchBar(inputName){
+function searchBar(inputName) {
     $(inputName).keyup(function () {
         var rex = new RegExp($(this).val(), 'i');
         var searchDiv = $('.searchable tr');
@@ -16,45 +54,6 @@ function searchBar(inputName){
             return rex.test($(this).text());
         }).show();
     });
-}
-
-// $('[data-toggle="popover"]').popover({
-//     placement: 'top',
-//     trigger: 'hover'
-// });
-
-
-// Returns all of the studies.
-function returnStudies(){
-    // All of the known studies are obtained.
-    $.get("/api/v2/base_BRAINSATstudies?attrs=Unique_ID,GEOD_NR,Title,Author,Organism,Year,CelltypeID,SequencingType,Research_link&num=10000").done(function(data){
-        data = data["items"];
-        var tdstart = "<td>";
-        var tdend = "</td>";
-        uniqueTitle = [];
-        uniqueStudies = [];
-        // Each of the known studies is added into the variable uniqueStudies.
-        $.each(data, function(i){
-            if ($.inArray(data[i]["Title"], uniqueTitle)=== -1) {
-                uniqueTitle.push(data[i]["Title"]);
-                uniqueStudies.push(
-                    "<tr class='studyTable' id='" + data[i]["GEOD_NR"] + "' >"
-                    + tdstart + data[i]["CelltypeID"] + tdend
-                    + tdstart + data[i]["Region"] + tdend
-                    + tdstart + data[i]["Organism"] + tdend
-                    + tdstart + data[i]["Author"] + tdend
-                    + tdstart + data[i]["Title"] + tdend
-                    + tdstart + data[i]["Year"] + tdend
-                    + "</tr>" );
-            }
-        });
-        // These studies are sorted alphabetically on the GEOD number.
-        uniqueStudies.sort();
-        // Studies are joined with <br/> and written into the div tableContent.
-        $("#tableContent").html(uniqueStudies.join("<br/>"));
-    });
-    // The refresh button is hidden again.
-    $("#refreshPublications").hide();
 }
 
 // This function is the main caller when the user goes back to the 'home layout'.
@@ -75,7 +74,8 @@ function obtainStudies() {
         // For each element in the variable data
         $.each(data, function(i){
             // If the title is unknown in the variable uniqueTitle
-            if ($.inArray(data[i]["Title"], uniqueTitle)=== -1) {
+            // if ($.inArray(data[i]["Title"], uniqueTitle)=== -1) {
+            if ($.inArray(data[i]["GEOD_NR"], uniqueGEOD)=== -1) {
                 // The title of the given study is pushed to the variable uniqueTitle
                 uniqueTitle.push(data[i]["Title"]);
                 // The EGEOD number of the given study is pushed to the variable uniqueGEOD
@@ -111,7 +111,7 @@ function capitalizeEachWord(str) {
 
 // obtainTPMofGenes obtains all of the TPM values of a given study.
 // It also enables the creation of the bargraph shown on the same page.
-function obtainTPMofGenes(study, genes, origin, organism) {
+function obtainTPMofGenes(study, genes, organism) {
     // This function is used to preprocess the data for the creation of the bar graph.
     // The gene is searched within the given study.
     $.get("/api/v2/base_TPM" + study + "?q=external_gene_name==" + genes.toLowerCase()).done(function(currdata){
@@ -119,31 +119,24 @@ function obtainTPMofGenes(study, genes, origin, organism) {
         $('#TPMdiv_barplot').remove();
         // The attributes are obtained from the meta data and the items are obtained.
         var data = currdata["items"];
-        // The function createBarGraph is called to create the bargraph
-        if (origin === "qeAnalysis") {
-            // The div with id "geneName" is emptied.
-            document.getElementById("geneName").innerHTML = "";
-            if (organism[0] === "Mus musculus") {
-                $("#geneName").append(
-                    "<a class='QEgene' href='https://www.ensembl.org/" + organism[0].replace(/ /g, '_') + "/Gene/Summary?g=" + capitalizeEachWord(genes) + "' target='_blank'>" +
-                    "<h2 class='QEgene'>" + capitalizeEachWord(genes) + "</h2>" +
-                    "</a>");
-                // $("#TPMdiv").append("<div class='glyphicon glyphicon-info-sign col-md-offset-4' data-html=\"true\" data-toggle=\"popover\" title=\"Modal Short Text\" data-content=\""+ QEimageCon+"\"></div>");
-                $("#TPMdiv").append("<div id=TPMdiv_barplot></div>").ready(function(){
-                    createBarGraph(data, "TPMdiv_barplot", $("#TPMdiv").width(), true);
-                });
-            } else if (organism[0] === "Homo sapiens") {
-                $("#geneName").append(
-                    "<a class='QEgene' href='https://www.ensembl.org/" + organism[0].replace(/ /g, '_') + "/Gene/Summary?g=" + genes.toUpperCase() + "' target='_blank'>" +
-                    "<h2 class='QEgene'>" + genes.toUpperCase() + "</h2>" +
-                    "</a>");
-                // $("#TPMdiv").append("<div class='glyphicon glyphicon-info-sign col-md-offset-4' data-html=\"true\" data-toggle=\"popover\" title=\"Modal Short Text\" data-content=\""+ QEimageCon+"\"></div>");
-                $("#TPMdiv").append("<div id=TPMdiv_barplot></div>").ready(function(){
-                    createBarGraph(data, "TPMdiv_barplot", $("#TPMdiv").width(), true);
-                });
-            }
-        } else {
-            createBarGraph(data, "dashboard_" + origin + "_barplot", $("#geneInformation").width(), false);
+        // The div with id "geneName" is emptied.
+        document.getElementById("geneName").innerHTML = "";
+        if (organism[0] === "Mus musculus" || organism[0] === "Rattus norvegicus") {
+            $("#geneName").append(
+                // "<a class='QEgene' href='https://www.ensembl.org/" + organism[0].replace(/ /g, '_') + "/Gene/Summary?g=" + capitalizeEachWord(genes) + "' target='_blank'>" +
+                "<h2>" + capitalizeEachWord(genes) + "</h2>");
+                // "</a>");
+            $("#TPMdiv").append("<div id=TPMdiv_barplot></div>").ready(function(){
+                createBarGraph(data, "TPMdiv_barplot", $("#TPMdiv").width(), true);
+            });
+        } else if (organism[0] === "Homo sapiens" || organism[0] === "Macaca mulatta") {
+            $("#geneName").append(
+                // "<a class='QEgene' href='https://www.ensembl.org/" + organism[0].replace(/ /g, '_') + "/Gene/Summary?g=" + genes.toUpperCase() + "' target='_blank'>" +
+                "<h2>" + genes.toUpperCase() + "</h2>");
+                // "</a>");
+            $("#TPMdiv").append("<div id=TPMdiv_barplot></div>").ready(function(){
+                createBarGraph(data, "TPMdiv_barplot", $("#TPMdiv").width(), true);
+            });
         }
         // Adjust the position of the  plotly legend (where you can download the plot)
         $(".js-plotly-plot .plotly .modebar").css("top", "10%");
@@ -156,8 +149,10 @@ function hideDE(){
     $("#selectBar").hide();
     $("#selectConditions").hide();
     $("#scatterplot").hide();
+    $("#scatterplotHelp").hide();
     $("#searchBar_DE").hide();
     $("#DETable").hide();
+    $("#DEHelp").hide();
 }
 
 //hideQE hides all of the QE content on BRAIN-sat.
@@ -178,7 +173,7 @@ function processGenes(dataFrame, studySearch, firstIteration) {
             if (g === 0) {
                 availableGenes = [];
                 // The line below is used to create a bargraph of the first found gene on the website (bar graph part).
-                obtainTPMofGenes(GEODOnPage[0].replace(/-/g,''), genes["external_gene_name"], "qeAnalysis", organismOnPage);
+                obtainTPMofGenes(GEODOnPage[0].replace(/-/g,''), genes["external_gene_name"], organismOnPage);
             }
         }
         // These genes are saved into the array availableGenes, where it can be used with the search function.
@@ -187,11 +182,14 @@ function processGenes(dataFrame, studySearch, firstIteration) {
 }
 
 function geneSearch(studyID, autoCompeteForm, studySearch){
+    if (autoCompeteForm === ".genelist") {
+        studyID = "TPM"+studyID.replace(/-/g,'');
+    }
     // Obtain the necessary information of the different tables and call the processGenes function.
-    $.when($.get("/api/v2/base_TPM"+studyID.replace(/-/g,'')+"?start=1&num=10000")).done( function (firstGenes) {processGenes(firstGenes, studySearch, true)} );
-    $.when($.get("/api/v2/base_TPM"+studyID.replace(/-/g,'')+"?start=10001&num=10000")).done( function (secondGenes) {processGenes(secondGenes, studySearch, false)} );
-    $.when($.get("/api/v2/base_TPM"+studyID.replace(/-/g,'')+"?start=20001&num=10000")).done( function (thirdGenes) {processGenes(thirdGenes, studySearch, false)} );
-    $.when($.get("/api/v2/base_TPM"+studyID.replace(/-/g,'')+"?start=30001&num=10000")).done( function (fourthGenes) {processGenes(fourthGenes, studySearch, false)} );
+    $.when($.get("/api/v2/base_"+studyID+"?start=1&num=10000")).done( function (firstGenes) {processGenes(firstGenes, studySearch, true)} );
+    $.when($.get("/api/v2/base_"+studyID+"?start=10001&num=10000")).done( function (secondGenes) {processGenes(secondGenes, studySearch, false)} );
+    $.when($.get("/api/v2/base_"+studyID+"?start=20001&num=10000")).done( function (thirdGenes) {processGenes(thirdGenes, studySearch, false)} );
+    $.when($.get("/api/v2/base_"+studyID+"?start=30001&num=10000")).done( function (fourthGenes) {processGenes(fourthGenes, studySearch, false)} );
 
     // The autocomplete function of the searchbar for both the bar graph as the table is defined.
     $(autoCompeteForm).autocomplete({
@@ -214,8 +212,6 @@ function geneSearch(studyID, autoCompeteForm, studySearch){
         $("#searchBar_QE").show();
         $("#QEsearch").show();
         $(".row.DE").show();
-        $("#DownloadQE").show();
-        $("#selectBarQE").show();
         searchBar("#QEsearch");
     }
     hideDE();
@@ -259,45 +255,20 @@ function dynamicSort(property) {
 
 function fillGeneSearch(geneName) {
     if (availableGenes.includes(geneName)) {
-        var imgSource = "";
-        var organism = "";
-        for (var i=0; i < studiesSearch.length; i++) {
-            if (i !== 0 ) {
-                $("#geneInformation").append("<hr>")
-            }
-            var egeodStudyNr = studiesSearch[i];
-            if($("dashboard_"+egeodStudyNr.replace(/-/g,'')).length === 0) {
-                $("#geneInformation").append("<div id='dashboard_" + egeodStudyNr.replace(/-/g,'') + "' style='height:650px;'></div>");
-                $.get('/api/v2/base_BRAINSATstudies?attr=GEOD_NR,Title,Research_link,Author,Organism,&q=GEOD_NR=="'+egeodStudyNr+'"').done(function(data){
-                    data = data["items"];
-                    var dashboardDiv =  $("#dashboard_"+data[1]["GEOD_NR"].replace(/-/g,""));
-                    organism = data[1]['Organism'];
-                    if (data[1]['Organism'] === "Mus musculus") {
-                        dashboardDiv.append("<div id='geneName' class='row'><div class='col-md-6' style='font-size:24pt;'><a href='https://www.ensembl.org/Mus_musculus/Gene/Summary?g="+ capitalizeEachWord(geneName) + "' target='_blank'><p style='margin-left:0.5em;'><b>"+capitalizeEachWord(geneName)+"</b></p></a></div></div>");
-                        imgSource = "/img/distributionPlot_" + data[1]["GEOD_NR"].replace(/-/g,"").replace("EGEOD","")+".png";
-                        dashboardDiv.append('<div class="row"><div class="col-xs-9 col-sm-9" style="font-size:24pt;"><p style="margin-left:0.5em;"><b>Mouse</b></p></div><div class="col-xs-3 col-sm-3 img" style="margin-bottom:-100px;"><img class="img-responsive" src=\"'+imgSource+'\"/></div></div>');
-                    } else if (data[1]['Organism'] === "Homo sapiens") {
-                        dashboardDiv.append("<div id='geneName' class='row'><div class='col-md-6' style='font-size:24pt;'><a href='https://www.ensembl.org/Homo_sapiens/Gene/Summary?g="+ geneName.toUpperCase() + "' target='_blank'><p style='margin-left:0.5em;'><b>"+geneName.toUpperCase()+"</b></p></a></div></div>");
-                        imgSource = "/img/distributionPlot_" + data[1]["GEOD_NR"].replace(/-/g,"").replace("EGEOD","")+".png";
-                        dashboardDiv.append('<div class="row"><div class="col-xs-9 col-sm-9" style="font-size:24pt;"><p style="margin-left:0.5em;"><b>Human</b></p></div><div class="col-xs-3 col-sm-3 img" style="margin-bottom:-100px;"><img class="img-responsive" src=\"'+imgSource+'\"/></div></div>');
-                    }
-                    // This information is added into the div, making sure that it is clear which dashboard belongs to which study.
-                    if (data[1]['Research_link'] === "Unknown") {
-                        dashboardDiv.append("<p class='svgTitle col-xs-9 col-sm-9'><b>"+ data[1]["Title"] +"</b><br/>By "+ data[1]["Author"] + "</p> <br/>");
-                    } else {
-                        dashboardDiv.append("<p class='svgTitle col-xs-9 col-sm-9'><b>"+ data[1]["Title"] +"</b><br/>By <a href='"+data[1]['Research_link']+"' target='_blank'>"+ data[1]["Author"] + "</a>"+ "</p> <br/>");
-                    }
-
-                    // if (i === 0) {
-                    //     dashboardDiv.append("<div class='glyphicon glyphicon-info-sign col-md-offset-4' data-html=\"true\" data-toggle=\"popover\" title=\"Modal Short Text\" data-content=\""+ QEimageCon +"\"></div>");
-                    // }
-                    // Add the dashboard barplot div last
-                    dashboardDiv.append('<div id=dashboard_' +  data[1]["GEOD_NR"].replace(/-/g,'') + '_barplot></div>').ready(function(){
-                        obtainTPMofGenes(data[1]["GEOD_NR"].replace(/-/g,''), geneName.toLowerCase(), data[1]["GEOD_NR"].replace(/-/g,''), organism);
-                    });
+        document.getElementById("geneNameSearch").innerHTML = "";
+        $.get("/api/v2/base_infoTableSearch").done(function(infoData) {
+            infoData = infoData["items"];
+            $.get("/api/v2/base_combinedMatrixSearch?q=external_gene_name==" + geneName.toUpperCase()).done(function(geneData){
+                geneData = geneData["items"];
+                $("#geneNameSearch").append("" +
+                    "<a class='QEgene' href='https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=" + geneName.toUpperCase() + "' target='_blank'>" +
+                        "<h2>" + geneName.toUpperCase() + "</h2>" +
+                    "</a>").
+                ready(function(){
+                        createSearchPlot(infoData, geneData)
                 });
-            }
-        }
+            });
+        });
     } else {
         $('#geneInformation').html('<div class="alert alert-danger" role="alert"><strong>Oops!</strong> Unable to find: ' + geneName + ' <br/>Please try again.</div>' )
 

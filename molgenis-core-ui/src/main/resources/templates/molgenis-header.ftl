@@ -39,8 +39,8 @@
         </#list>
     </#if>
 
-    <script src="<@resource_href "/js/d3.js"/>"></script>
-    <script src="<@resource_href "/js/d3-tip.js"/>"></script>
+    <#--<script src="<@resource_href "/js/d3.js"/>"></script>-->
+    <#--<script src="<@resource_href "/js/d3-tip.js"/>"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
 <#-- Bundle of third party JavaScript resources used by MOLGENIS: see minify-maven-plugin in molgenis-core-ui/pom.xml for bundle contents -->
     <script src="<@resource_href "/js/es6-promise.min.js"/>"></script>
