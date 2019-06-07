@@ -30,7 +30,7 @@
                         <hr>
                         <address>
                             <strong>University Medical Center Groningen<br></strong>
-                            Department of Biomedical Sciences of Cells and Systems (BSCS), section Molecular Neurobiology <br/>
+                            Department of Biomedical Sciences of Cells and Systems, section Molecular Neurobiology <br/>
                             Antonius Deusinglaan 1<br/>
                             9713 AV Groningen <br/>
                             The Netherlands <br/>

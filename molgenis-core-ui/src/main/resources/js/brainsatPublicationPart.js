@@ -12,9 +12,9 @@ $(document).ready(function () {
 	
 	// When clicking upon a study within the studyTable.
 	$("body").on("click", ".studyTable", function(){
-		// $("#DownloadScatterplot").hide();
+        $('html,body').scrollTop(0);
 		// Creates a tooltip when hovering on the studyTable	
-		$('.studyTable').tooltip(); 
+		// $('.studyTable').tooltip();
 	
 		// The information of the given studies are obtained.
 		var uniqueConditions = [];
@@ -108,11 +108,9 @@ $(document).ready(function () {
 	});
 
 	$("body").on("click", "#submitDEbutton", function(){
-        $('html,body').scrollTop(0);
 		// The table-scroll is emptied when clicking the DE submit button
 		// and the for-control is reset.
 		// The modal that holds the loading bar is hidden.
-		// $('#loaderModal').modal({backdrop: 'static', keyboard: false},'show');
 		$("#NoDEGMessage").hide();
 		$("#firstCondition").remove();
 		$(".table-scroll").empty();
@@ -124,7 +122,6 @@ $(document).ready(function () {
 		$("#scatterplot").empty();
 		$(".row.DE").hide();
 		$(".loader").show();
-		// $("#DEHelp").show();
 
 		// When there are two conditions chosen the API for the scatterplot and the DE table is called.
 		var count = $("#selectConditions :selected").length;
@@ -226,7 +223,6 @@ $(document).ready(function () {
 	
 	// When clicking upon the submit QE button
 	$("body").on("click", ".QEbutton", function(){
-        $('html,body').scrollTop(0);
 		// The table-scroll is emptied when clicking the QE submit button
 		// and the for-control is reset.
 		$(".table-scroll").empty();
@@ -257,7 +253,6 @@ $(document).ready(function () {
 	});
 
     $("#SingleCell").on("click", function () {
-        $('html,body').scrollTop(0);
         $("#singleCellCollapse").collapse('show');
         $("#SingleCellHelp").show();
 
@@ -270,30 +265,6 @@ $(document).ready(function () {
         if (document.getElementById("pieChartVis")) {
             document.getElementById("pieChartVis").innerHTML = "";
         }
-
-        // $("#tSNEplot").show();
-        // $("#tSNEplot").append('' +
-        //     '<span id="tooltipSCtsne" class="tooltipSC glyphicon glyphicon-info-sign" data-tooltip-content="#tooltip_contentSCtsne"> </span>' +
-        //     '    <div class="tooltip_templates">' +
-        //     '        <div id="tooltip_contentSCtsne">' +
-        //     '            <div class="row">' +
-        //     '                <div class="col-md-6"><h2>Example:</h2>' +
-        //     '                    <hr>' +
-        //     '                    <img src="/img/scRNA_analysis_example_tsne.png" width="60%"/></div>' +
-        //     '                <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">' +
-        //     '                    <h2>Explanation:</h2>' +
-        //     '                    <hr>' +
-        //     '                    The t-sne consists of several elements that might be useful for your analysis.' +
-        //     '                    Initially the only variation is based on the different conditions (see legend).' +
-        //     '                    The transparency of the samples is changed (1) when a gene is searched in the data.' +
-        //     '                    A solid dot represents in percentages the highest value and a \'see through\' dot means that the gene abundance (CPM) is a low value (or even 0).' +
-        //     '                    Hovering over the dots enables a label that shows the sample name and conditions it was found (2).' +
-        //     '                    The t-sne can be downloaded when you click on the camera (3).' +
-        //     '                </div>' +
-        //     '            </div>' +
-        //     '        </div>' +
-        //     '    </div>');
-        // $('#tooltipSCtsne').tooltipster();
 
         $("#searchGenetSne").show();
         $("#searchGeneInput").show();
