@@ -130,66 +130,160 @@
 
 	<#include "resource-macros.ftl">
 
-	<button type="button" class="btn btn-primary btn-block disabled" id="SingleCell" data-toggle="collapse" data-target="#singleCellCollapse" aria-expanded="false" aria-controls="singleCellCollapse"> Single Cell RNA Sequencing </button>
-    <div class="tooltip pull-right">
-        <span id="SingleCellHelp" class="tooltipSearch glyphicon glyphicon-info-sign"> </span>
-		<#--<button type="button" class="btn btn-primary" id="SingleCellHelp"> scRNA figure explanation </button>-->
-		<span class="tooltiptext rightSideHelp">
-			<div class="row">
-				<div class="col-md-6"><h2>Example:</h2>
-					<hr>
-					<img src="/img/scRNA_analysis_example_tsne.png" width="60%" class="center-block">
-				</div>
-				<div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
-					<h2>Explanation:</h2>
-					<hr>
-					The t-sne consists of several elements that might be useful for your analysis.
-					Initially the only variation is based on the different conditions (see legend).
-					The transparency of the samples is changed (1) when a gene is searched in the data.
-					A solid dot represents in percentages the highest value and a 'see through' dot means that the gene abundance (CPM) is a low value (or even 0).
-					Hovering over the dots enables a label that shows the sample name and conditions it was found (2).
-					The t-sne can be downloaded when you click on the camera (3).
-				</div>
-			</div>
+    <button type="button" class="btn btn-primary btn-block disabled" id="SingleCell" data-toggle="collapse" data-target="#singleCellCollapse" aria-expanded="false" aria-controls="singleCellCollapse"> Single Cell RNA Sequencing </button>
 
-			<div class="row">
-				<div class="col-md-6"><h2>Example:</h2>
-					<hr>
-					<img src="/img/scRNA_analysis_example_tsne.png" width="60%" class="center-block">
-				</div>
-				<div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
-					<h2>Explanation:</h2>
-					<hr>
-					The t-sne consists of several elements that might be useful for your analysis.
-					Initially the only variation is based on the different conditions (see legend).
-					The transparency of the samples is changed (1) when a gene is searched in the data.
-					A solid dot represents in percentages the highest value and a 'see through' dot means that the gene abundance (CPM) is a low value (or even 0).
-					Hovering over the dots enables a label that shows the sample name and conditions it was found (2).
-					The t-sne can be downloaded when you click on the camera (3).
-				</div>
-			</div>
+<#-- Figure explanation -->
+    <#--<div id="scModalDiv" class="pull-right" data-toggle="modalSC" data-target="#scModal">-->
+        <#--<span class="glyphicon glyphicon-info-sign"></span>-->
+    <#--</div>-->
+    <#--<div class="modal fade" id="scModal" tabindex="-1" role="dialog" aria-labelledby="scModalLabel" aria-hidden="true">-->
+        <#--<div class="modal-dialog" role="document">-->
+            <#--<div class="modal-content">-->
+                <#--<div class="modal-header">-->
+                    <#--<button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                    <#--<h4 class="modal-title">Explanation single cell figures</h4>-->
+                <#--</div>-->
 
-			<div class="row">
-				<div class="col-md-6"><h2>Example:</h2>
-					<hr>
-					<img src="/img/scRNA_analysis_example_piechard.png" width="60%" class="center-block">
-				</div>
-				<div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
-					<h2>Explanation:</h2>
-					<hr>
-					The pie card is the figure that explains the distribution of all variance.
-					Explaining which condition has the most expression of a gene.
-					Each of the conditions is draw in the pie chard (1), including the percentage (2).
-					This percentage is calculated by dividing the CPM of the samples in one condition by the CPM value of all samples.
-					Hovering over a condition enables a label (3).
-					By clicking on the following button, this image can be downloaded (4).
-				</div>
-			</div>
-		</span>
-    </div>
+                <#--<div class="modal-body">-->
+                    <#--<div class="btn-group btn-group-justified">-->
+                        <#--<div class="btn-group"><button class="btn btn-default tsneExplanation" type="button" data-toggle="collapse" data-target="#tsneSC" aria-expanded="false">TSNE</button></div>-->
+                        <#--<div class="btn-group"><button class="btn btn-default boxplotExplanation" type="button" data-toggle="collapse" data-target="#boxplotSC" aria-expanded="false">Box plot</button></div>-->
+                        <#--<div class="btn-group"><button class="btn btn-default piechardExplanation" type="button" data-toggle="collapse" data-target="#piechardCS" aria-expanded="false">Pie chard</button></div>-->
+                    <#--</div>-->
 
-	<div id="singleCellCollapse">
-        	<div id="app"></div>
+                    <#--<hr>-->
+
+                    <#--<div class="collapse" id="tsneSC">-->
+                        <#--<h4>tSNE example:</h4>-->
+                        <#--<div class="row">-->
+                            <#--<div class="col-md-6">-->
+                                <#--<img src="/img/scRNA_analysis_example_tsne.png" width="80%" class="center-block">-->
+                            <#--</div>-->
+                            <#--<div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">-->
+                                <#--The t-sne consists of several elements that might be useful for your analysis.-->
+                                <#--Initially the only variation is based on the different conditions (see legend).-->
+                                <#--The transparency of the samples is changed (1) when a gene is searched in the data.-->
+                                <#--A solid dot represents in percentages the highest value and a 'see through' dot means that the gene abundance (CPM) is a low value (or even 0).-->
+                                <#--Hovering over the dots enables a label that shows the sample name and conditions it was found (2).-->
+                                <#--The t-sne can be downloaded when you click on the camera (3).-->
+                            <#--</div>-->
+                        <#--</div>-->
+                    <#--</div>-->
+
+                    <#--<div class="collapse" id="boxplotSC">-->
+                        <#--<h4>Box plot example:</h4>-->
+                        <#--<div class="row">-->
+                            <#--<div class="col-md-6">-->
+                                <#--<img src="/img/scRNA_analysis_example_boxplot.png" width="60%" class="center-block">-->
+                            <#--</div>-->
+                            <#--<div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">-->
+                                <#--The box plot provides additional information about the gene expression abundancy.-->
+                                <#--The variation is based on the CPM values that are provided, each condition is equal to the condition of the tSNE.-->
+                                <#--Variation that cannot be captured (1) by the box or whiskers represent the outliers.-->
+                                <#--The median, interquartile range, outside of the whiskers and the maximum and minimum values can be obtained by hovering over the boxplot (2).-->
+                                <#--This visualization will be downloaded after you press on the camera (3).-->
+                            <#--</div>-->
+                        <#--</div>-->
+
+                    <#--</div>-->
+
+                    <#--<div class="collapse" id="piechardCS">-->
+                        <#--<h4>Pie chard example:</h4>-->
+                        <#--<div class="row">-->
+                            <#--<div class="col-md-6">-->
+                                <#--<img src="/img/scRNA_analysis_example_piechard.png" width="60%" class="center-block">-->
+                            <#--</div>-->
+                            <#--<div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">-->
+                                <#--The pie card is the figure that explains the distribution of all variance.-->
+                                <#--Explaining which condition has the most expression of a gene.-->
+                                <#--Each of the conditions is draw in the pie chard (1), including the percentage (2).-->
+                                <#--This percentage is calculated by dividing the CPM of the samples in one condition by the CPM value of all samples.-->
+                                <#--Hovering over a condition enables a label (3).-->
+                                <#--By clicking on the following button, this image can be downloaded (4).-->
+                            <#--</div>-->
+                        <#--</div>-->
+                    <#--</div>-->
+                <#--</div>-->
+            <#--</div>-->
+        <#--</div>-->
+    <#--</div>-->
+    <div id="singleCellCollapse">
+        <div id="scModalDiv" class="pull-right" data-toggle="modalSC" data-target="#scModal">
+            <span class="glyphicon glyphicon-info-sign"></span>
+        </div>
+        <div class="modal fade" id="scModal" tabindex="-1" role="dialog" aria-labelledby="scModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Explanation single cell figures</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="btn-group btn-group-justified">
+                            <div class="btn-group"><button class="btn btn-default tsneExplanation" type="button" data-toggle="collapse" data-target="#tsneSC" aria-expanded="false">TSNE</button></div>
+                            <div class="btn-group"><button class="btn btn-default boxplotExplanation" type="button" data-toggle="collapse" data-target="#boxplotSC" aria-expanded="false">Box plot</button></div>
+                            <div class="btn-group"><button class="btn btn-default piechardExplanation" type="button" data-toggle="collapse" data-target="#piechardCS" aria-expanded="false">Pie chard</button></div>
+                        </div>
+
+                        <hr>
+
+                        <div class="collapse" id="tsneSC">
+                            <h4>tSNE example:</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="/img/scRNA_analysis_example_tsne.png" width="80%" class="center-block">
+                                </div>
+                                <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+                                    The t-sne consists of several elements that might be useful for your analysis.
+                                    Initially the only variation is based on the different conditions (see legend).
+                                    The transparency of the samples is changed (1) when a gene is searched in the data.
+                                    A solid dot represents in percentages the highest value and a 'see through' dot means that the gene abundance (CPM) is a low value (or even 0).
+                                    Hovering over the dots enables a label that shows the sample name and conditions it was found (2).
+                                    The t-sne can be downloaded when you click on the camera (3).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="boxplotSC">
+                            <h4>Box plot example:</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="/img/scRNA_analysis_example_boxplot.png" width="60%" class="center-block">
+                                </div>
+                                <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+                                    The box plot provides additional information about the gene expression abundancy.
+                                    The variation is based on the CPM values that are provided, each condition is equal to the condition of the tSNE.
+                                    Variation that cannot be captured (1) by the box or whiskers represent the outliers.
+                                    The median, interquartile range, outside of the whiskers and the maximum and minimum values can be obtained by hovering over the boxplot (2).
+                                    This visualization will be downloaded after you press on the camera (3).
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="collapse" id="piechardCS">
+                            <h4>Pie chard example:</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="/img/scRNA_analysis_example_piechard.png" width="60%" class="center-block">
+                                </div>
+                                <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+                                    The pie card is the figure that explains the distribution of all variance.
+                                    Explaining which condition has the most expression of a gene.
+                                    Each of the conditions is draw in the pie chard (1), including the percentage (2).
+                                    This percentage is calculated by dividing the CPM of the samples in one condition by the CPM value of all samples.
+                                    Hovering over a condition enables a label (3).
+                                    By clicking on the following button, this image can be downloaded (4).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="app"></div>
 	</div>
 	<button type="button" id="returnAccordion" class="btn btn-default btn-block returnButton"><span id="leftArrow" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+<#--</div>-->
 </div>

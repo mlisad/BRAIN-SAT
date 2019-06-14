@@ -67,8 +67,11 @@ text.label {
   margin-bottom:5px;
 }
 
-#closeModal{
+.closeModal{
   color:#000 !important;
+  font-size: 32px !important;
+  text-shadow: #000 !important;
+  opacity: 0.8 !important;
 }
 
 .modal-title{
@@ -152,9 +155,6 @@ text.label {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-.underline { text-decoration: underline; }
-.tooltip_templates { display: none; }
 
 /* hides the svg dom element that has the click handler responsible for toggling */
 #geneInformation .legend .traces .legendtoggle { display: none; }

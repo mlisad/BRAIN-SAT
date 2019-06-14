@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" id="closeModal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Settings</h4>
             </div>
             <div class="modal-body">
@@ -71,6 +71,10 @@
                                 <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE43366" target="_blank">Data</a></td>
                             </tr>
                             <tr>
+                                <td>Darmanis et al. (2017)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/29091775" target="_blank">Pubmed</a></td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84465" target="_blank">Data</a></td>
+                            </tr>                            <tr>
                                 <td>Galatro et al. (2017)</td>
                                 <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/28671693" target="_blank">Pubmed</a></td>
                                 <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99074" target="_blank">Data</a></td>
@@ -106,6 +110,11 @@
                                 <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75246" target="_blank">Data</a></td>
                             </tr>
                             <tr>
+                                <td>Tay et al. (2018)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/30185219" target="_blank">Pubmed</a></td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90975" target="_blank">Data</a></td>
+                            </tr>
+                            <tr>
                                 <td>Thion et al. (2018)</td>
                                 <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/29275859" target="_blank">Pubmed</a></td>
                                 <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE108045" target="_blank">Data</a></td>
@@ -129,6 +138,11 @@
                                 <td>Xu et al. (2018)</td>
                                 <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/30320555" target="_blank">Pubmed</a></td>
                                 <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE101918" target="_blank">Data</a></td>
+                            </tr>
+                            <tr>
+                                <td>Zeisel et al. (2015)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/25700174" target="_blank">Pubmed</a></td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60361" target="_blank">Data</a></td>
                             </tr>
                             <tr>
                                 <td>Zhang et al. (2014)</td>

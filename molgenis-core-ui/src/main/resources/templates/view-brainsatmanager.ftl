@@ -76,7 +76,7 @@
                     <div class="row">
                         <div class="col-md-6"><h2>Example:</h2>
                             <hr>
-                            <img src="/img/Search_Example.png" width="80%" class="center-block"/>
+                            <img src="/img/Search_Example.png" width="95%" class="center-block"/>
                         </div>
                         <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
                             <h2>Explanation:</h2>

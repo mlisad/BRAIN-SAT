@@ -74,6 +74,7 @@ $(document).ready(function () {
 		$("#accordion").hide();
 		$(".row.DE").hide();
 		$("#publicationPart").show();
+		$("#scModalDiv").hide();
 	});
 
 	//---------------------------------------------//
@@ -253,6 +254,8 @@ $(document).ready(function () {
 	});
 
     $("#SingleCell").on("click", function () {
+        // $("#scModalDiv").collapse('show');
+        $("#scModalDiv").show();
         $("#singleCellCollapse").collapse('show');
         $("#SingleCellHelp").show();
 

@@ -37,9 +37,9 @@ $(document).ready(function () {
         geneSearched("#geneTextOnPage")
     });
 
-	//----------------------//
+	//---------------------------//
 	//Tutorial part of BRAIN-sat.//
-	//----------------------//
+	//---------------------------//
 
 	// When clicking upon the close button of the tutorial pop up
 	bodyCon.on("click", "#closeModal", function(){
@@ -50,6 +50,7 @@ $(document).ready(function () {
         $('#rawDatasets').collapse('hide');
         $('#dataSetting').collapse('hide');
 	});
+
 
 	// When clicking upon the DE information in the tutorial button the QE information is hidden.
 	bodyCon.on("click", ".tutorialDEinfo", function(){
@@ -69,12 +70,14 @@ $(document).ready(function () {
         $('#QEanalysis').collapse('hide');
     });
 
+    //---------------------------//
+    // Setting part of BRAIN-sat.//
+    //---------------------------//
     // When clicking upon the scRNA information in the tutorial button the DE information is hidden.
     bodyCon.on("click", ".settingsPreprocessing", function(){
         $('#rawDatasets').collapse('hide');
         $('#disclaimer').collapse('hide');
     });
-
 
     // When clicking upon the scRNA information in the tutorial button the DE information is hidden.
     bodyCon.on("click", ".rawDatasets", function(){
@@ -87,7 +90,31 @@ $(document).ready(function () {
         $('#rawDatasets').collapse('hide');
     });
 
+    //---------------------------//
+    //   SC part of BRAIN-sat.   //
+    //---------------------------//
+    bodyCon.on("click", ".tsneExplanation", function(){
+        $('#boxplotSC').collapse('hide');
+        $('#piechardCS').collapse('hide');
+    });
+
+    // When clicking upon the scRNA information in the tutorial button the DE information is hidden.
+    bodyCon.on("click", ".boxplotExplanation", function(){
+        $('#tsneSC').collapse('hide');
+        $('#piechardCS').collapse('hide');
+    });
+
+    bodyCon.on("click", ".piechardExplanation", function(){
+        $('#tsneSC').collapse('hide');
+        $('#boxplotSC').collapse('hide');
+    });
+
+    $('[data-toggle="modalSC"]').hover(function() {
+        var modalId = $(this).data('target');
+        $(modalId).modal('show');
+
+    });
+
     // The input id filter is called (this input is used to filter the studies on the homepage).
     searchBar("#filter");
-
 });
