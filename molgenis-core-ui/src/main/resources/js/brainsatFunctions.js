@@ -36,7 +36,6 @@ function geneSearched(divID) {
     if (divID === "#geneText") {
         availableGenes = [];
         geneSearch("combinedMatrixSearch", "#geneTextOnPage", false);
-        // geneSearch(studiesSearch[0], "#geneTextOnPage", false);
         enterSearch("geneTextOnPage", "geneSearchOnPage");
     }
 }
@@ -74,7 +73,6 @@ function obtainStudies() {
         // For each element in the variable data
         $.each(data, function(i){
             // If the title is unknown in the variable uniqueTitle
-            // if ($.inArray(data[i]["Title"], uniqueTitle)=== -1) {
             if ($.inArray(data[i]["GEOD_NR"], uniqueGEOD)=== -1) {
                 // The title of the given study is pushed to the variable uniqueTitle
                 uniqueTitle.push(data[i]["Title"]);
@@ -123,17 +121,13 @@ function obtainTPMofGenes(study, genes, organism) {
         document.getElementById("geneName").innerHTML = "";
         if (organism[0] === "Mus musculus" || organism[0] === "Rattus norvegicus") {
             $("#geneName").append(
-                // "<a class='QEgene' href='https://www.ensembl.org/" + organism[0].replace(/ /g, '_') + "/Gene/Summary?g=" + capitalizeEachWord(genes) + "' target='_blank'>" +
                 "<h2>" + capitalizeEachWord(genes) + "</h2>");
-                // "</a>");
             $("#TPMdiv").append("<div id=TPMdiv_barplot></div>").ready(function(){
                 createBarGraph(data, "TPMdiv_barplot", $("#TPMdiv").width(), true);
             });
         } else if (organism[0] === "Homo sapiens" || organism[0] === "Macaca mulatta") {
             $("#geneName").append(
-                // "<a class='QEgene' href='https://www.ensembl.org/" + organism[0].replace(/ /g, '_') + "/Gene/Summary?g=" + genes.toUpperCase() + "' target='_blank'>" +
-                "<h2>" + genes.toUpperCase() + "</h2>");
-                // "</a>");
+                                "<h2>" + genes.toUpperCase() + "</h2>");
             $("#TPMdiv").append("<div id=TPMdiv_barplot></div>").ready(function(){
                 createBarGraph(data, "TPMdiv_barplot", $("#TPMdiv").width(), true);
             });
@@ -181,9 +175,12 @@ function processGenes(dataFrame, studySearch, firstIteration) {
 }
 
 function geneSearch(studyID, autoCompeteForm, studySearch){
+    // Change the studyID when the defined autoCompleteForm = .geneList
     if (autoCompeteForm === ".genelist") {
         studyID = "TPM"+studyID.replace(/-/g,'');
     }
+
+    // Create necessary variables
     var numberOfGene, tenThousand, restVal = "";
     var tenThousandCounter = 0;
 

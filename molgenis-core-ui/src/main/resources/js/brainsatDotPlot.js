@@ -5,10 +5,11 @@
 
 
 function createSearchPlot(information, geneValues) {
+    // Delete the following values from the geneValues object
     delete geneValues[0]['_href'];
     delete geneValues[0]['external_gene_name'];
 
-    // var studyInfo = new Object();
+    // Create empty elements to use further in the function.
     var studyInfo = {};
     var uniqueCelltype = [];
     var uniqueAuthor = [];
@@ -20,26 +21,36 @@ function createSearchPlot(information, geneValues) {
     // Traces is saved, since we are looping through the different conditions and percentiles.
     var traces = [];
 
+    // For each information trace (meta data of the geneValues object)
     $.each(information, function(i) {
+        // Remove _href
         delete information[i]['_href'];
+        // Make sure that the Identifier is saved (a combination of all the necessary information from the information object)
         studyInfo[ information[i]["Identifier"] ] = Object.values(information[i]).slice(1)
             .join("<br>").replace(/<br>_/g,'<br>').replace(/Endothelial cell/g,'Endothelial');
+        // Make sure that the unique Cell types are saved
         if (!uniqueCelltype.includes(information[i]["CellType"].replace(/Endothelial cell/g,'Endothelial'))) {
             uniqueCelltype.push(information[i]["CellType"].replace(/Endothelial cell/g,'Endothelial'))
         }
-        //
+        // Make sure that the unique Authors are saved (with the corresponding publication year).
         if (!uniqueAuthor.includes(information[i]["Author"] + "_" + information[i]["Year"])) {
             uniqueAuthor.push(information[i]["Author"] + "_" + information[i]["Year"])
         }
+        // Push all of the cell types.
         celltypes.push(information[i]["CellType"].replace(/Endothelial cell/g,'Endothelial'));
     });
 
+    // For each element of the geneValues object
     $.each(geneValues[0], function(i, item) {
+        // Push the average value
         aveList.push(Math.log2(parseFloat(item)));
+        // And the identifier of the average values is saved (communicates with the information values).
         textList.push(Object.values(studyInfo)[Object.keys(studyInfo).indexOf(i)]);
     });
 
+    // Sort the list of uniqueAuthors
     uniqueAuthor = uniqueAuthor.sort();
+    // Establish the number of colors that need to be generated (based on the different authors)
     var colorAuthor = Plotly.d3.range(uniqueAuthor.length).map(Plotly.d3.scale.category20());
 
     // For each of the different percentiles that are known
@@ -93,7 +104,6 @@ function createSearchPlot(information, geneValues) {
     }
     // Create a layout value
     var layout = {
-        // showlegend: false,
         legend: {
             traceorder: 'normal',
             tracetoggle: false,
@@ -120,7 +130,6 @@ function createSearchPlot(information, geneValues) {
 
     // Define the necessary buttons and other options for plotly
     var options = {
-        // tracetoggle: false,
         showLink: false,
         displaylogo: false,
         modeBarButtonsToRemove: ['zoom2d', 'select2d', 'pan', 'pan2d', 'lasso2d', 'autoScale2d', 'sendDataToCloud',
@@ -135,7 +144,6 @@ function createSearchPlot(information, geneValues) {
     Plotly.newPlot("geneSearchPlot", traces, layout, options);
 }
 
-// function fillTrace(valuesx, valuesy, valuesText, valueName, markerColor, markerShape, valuesLow, valuesHigh, showLegend) {
 function fillTrace(valuesx, valuesy, valuesText, valueName, markerColor, markerShape, showLegend) {
     return ({
         // Obtain the right condition
@@ -156,20 +164,6 @@ function fillTrace(valuesx, valuesy, valuesText, valueName, markerColor, markerS
             // Symbol based on organism
             symbol: markerShape,
             size: 15
-        // },
-        // Add the error margins // Note these values make it very confusing
-        // error_y:{
-        //     type:'data',
-        //     // Color based on the different authors
-        //     color: markerColor,
-        //     // Opacity is low
-        //     opacity: 0.25,
-        //     // The variation of the highest and the lowest value is not symmetric
-        //     symmetric: false,
-        //     // The variation of the highest TPM is defined
-        //     array: valuesHigh,
-        //     // And the lowest TPM difference.
-        //     arrayminus: valuesLow
         }
     });
 

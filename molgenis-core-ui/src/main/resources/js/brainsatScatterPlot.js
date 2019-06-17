@@ -1,9 +1,12 @@
 
 function createScatterPlot(datatable, title){
+
+    // Create empty variables
     var datX = [];
     var datY = [];
     var geneSymbol = [];
 
+    // For each gene in the datatable obtain the geneSymbol, logFC and the FDR
     $.each(datatable, function(dat, info){
         if (dat % 5 === 1 && dat !== 0) {
             // Genesymbol
@@ -16,7 +19,8 @@ function createScatterPlot(datatable, title){
             datY.push(parseFloat(info))
         }
     });
-    
+
+    // Save the information in traces
     var traces = [];
     traces.push({
         x: datX,

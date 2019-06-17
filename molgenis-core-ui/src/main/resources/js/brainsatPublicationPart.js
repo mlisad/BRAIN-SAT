@@ -13,8 +13,6 @@ $(document).ready(function () {
 	// When clicking upon a study within the studyTable.
 	$("body").on("click", ".studyTable", function(){
         $('html,body').scrollTop(0);
-		// Creates a tooltip when hovering on the studyTable	
-		// $('.studyTable').tooltip();
 	
 		// The information of the given studies are obtained.
 		var uniqueConditions = [];
@@ -253,12 +251,16 @@ $(document).ready(function () {
 
 	});
 
+	// The necessary information is shown (and emptied) when the single cell part is called.
     $("#SingleCell").on("click", function () {
-        // $("#scModalDiv").collapse('show');
+    	// Show the scModal (onhover) div
         $("#scModalDiv").show();
+        // Collapse the part with the single cell app
         $("#singleCellCollapse").collapse('show');
+        // Show the help (on hover button)
         $("#SingleCellHelp").show();
 
+        // Clear the tSNEplot, barplotVis and piechartVis divs.
         if (document.getElementById("tSNEplot")) {
             document.getElementById("tSNEplot").innerHTML = "";
         }
@@ -269,13 +271,15 @@ $(document).ready(function () {
             document.getElementById("pieChartVis").innerHTML = "";
         }
 
+        // Show the tSNE and the gene search bar
         $("#searchGenetSne").show();
         $("#searchGeneInput").show();
 
+        // Return the window.__INITIAL_STATE__ to use further in the Vue component.
         if (GEODOnPage[0] !== '') {
             window.__INITIAL_STATE__ = GEODOnPage[0].replace(/-/g,'');
         }
-
+        // Load the function to call the Vue component
         loadVue();
     });
 

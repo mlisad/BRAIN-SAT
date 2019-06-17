@@ -73,18 +73,19 @@ $(document).ready(function () {
     //---------------------------//
     // Setting part of BRAIN-sat.//
     //---------------------------//
-    // When clicking upon the scRNA information in the tutorial button the DE information is hidden.
+    // When clicking upon the settingsPreprocessing information in the tutorial button the dataSetting and rawDatasets information is hidden.
     bodyCon.on("click", ".settingsPreprocessing", function(){
         $('#rawDatasets').collapse('hide');
         $('#disclaimer').collapse('hide');
     });
 
-    // When clicking upon the scRNA information in the tutorial button the DE information is hidden.
+    // When clicking upon the rawDatasets information in the tutorial button the dataSetting and disclamer information is hidden.
     bodyCon.on("click", ".rawDatasets", function(){
         $('#dataSetting').collapse('hide');
         $('#disclaimer').collapse('hide');
     });
 
+    // When clicking upon the disclaimer information in the tutorial button the dataSetting and rawDatasets information is hidden.
     bodyCon.on("click", ".disclaimer", function(){
         $('#dataSetting').collapse('hide');
         $('#rawDatasets').collapse('hide');
@@ -93,22 +94,24 @@ $(document).ready(function () {
     //---------------------------//
     //   SC part of BRAIN-sat.   //
     //---------------------------//
+    // When clicking upon the tsneExplanation information in the scRNA hover box, the piechardCS and boxplotSC information is hidden.
     bodyCon.on("click", ".tsneExplanation", function(){
         $('#boxplotSC').collapse('hide');
         $('#piechardCS').collapse('hide');
     });
 
-    // When clicking upon the scRNA information in the tutorial button the DE information is hidden.
+    // When clicking upon the boxplotExplanation information in the scRNA hover box, the tsneSC and piechardCS information is hidden.
     bodyCon.on("click", ".boxplotExplanation", function(){
         $('#tsneSC').collapse('hide');
         $('#piechardCS').collapse('hide');
     });
-
+    // When clicking upon the piechardExplanation information in the scRNA hover box, the tsneSC and boxplotSC information is hidden.
     bodyCon.on("click", ".piechardExplanation", function(){
         $('#tsneSC').collapse('hide');
         $('#boxplotSC').collapse('hide');
     });
 
+    // Make sure that the modalSC is shown when hovering over this ID
     $('[data-toggle="modalSC"]').hover(function() {
         var modalId = $(this).data('target');
         $(modalId).modal('show');
