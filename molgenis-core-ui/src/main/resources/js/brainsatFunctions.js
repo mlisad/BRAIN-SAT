@@ -171,7 +171,6 @@ function processGenes(dataFrame, studySearch, firstIteration) {
         // If a genes is searched from a study, then continue to the next if statement
         if (studySearch === true && firstIteration === true) {
             if (g === 0) {
-                availableGenes = [];
                 // The line below is used to create a bargraph of the first found gene on the website (bar graph part).
                 obtainTPMofGenes(GEODOnPage[0].replace(/-/g,''), genes["external_gene_name"], organismOnPage);
             }
@@ -185,11 +184,35 @@ function geneSearch(studyID, autoCompeteForm, studySearch){
     if (autoCompeteForm === ".genelist") {
         studyID = "TPM"+studyID.replace(/-/g,'');
     }
-    // Obtain the necessary information of the different tables and call the processGenes function.
-    $.when($.get("/api/v2/base_"+studyID+"?start=1&num=10000")).done( function (firstGenes) {processGenes(firstGenes, studySearch, true)} );
-    $.when($.get("/api/v2/base_"+studyID+"?start=10001&num=10000")).done( function (secondGenes) {processGenes(secondGenes, studySearch, false)} );
-    $.when($.get("/api/v2/base_"+studyID+"?start=20001&num=10000")).done( function (thirdGenes) {processGenes(thirdGenes, studySearch, false)} );
-    $.when($.get("/api/v2/base_"+studyID+"?start=30001&num=10000")).done( function (fourthGenes) {processGenes(fourthGenes, studySearch, false)} );
+    var numberOfGene, tenThousand, restVal = "";
+    var tenThousandCounter = 0;
+
+    // Determine how many genes are available in the dataset
+    $.when($.get("/api/v2/base_TPMEGEOD52564")).done( function (data) {
+        // Total number of genes
+        numberOfGene = data["total"].toString();
+        // The ten thousands values are saves together with the rest values ()
+        if (numberOfGene.length >= 5) {
+            tenThousand = numberOfGene.charAt(0);
+            restVal = numberOfGene.substring(1);
+        } else {
+            tenThousand = "0";
+            restVal = numberOfGene;
+        }
+
+        // Make sure that there are no unnecessary genes called
+        // The while consists of tenThousand +1 to make sure that the excess genes are obtained as well.
+        while (tenThousandCounter !== parseInt(tenThousand)+1) {
+            if (tenThousandCounter === 0) {
+                $.when($.get("/api/v2/base_"+studyID+"?start=1&num=10000")).done( function (genePart) {processGenes(genePart, studySearch, true)} );
+            } else if (tenThousandCounter === parseInt(tenThousand)) {
+                $.when($.get("/api/v2/base_"+studyID+"?start="+tenThousand+"0000&num="+restVal)).done( function (genePart) {processGenes(genePart, studySearch, false)} );
+            } else {
+                $.when($.get("/api/v2/base_"+studyID+"?start="+tenThousandCounter+"0001&num="+(tenThousandCounter+1).toString()+"0000")).done( function (genePart) {processGenes(genePart, studySearch, false)} );
+            }
+            tenThousandCounter += 1
+        }
+    });
 
     // The autocomplete function of the searchbar for both the bar graph as the table is defined.
     $(autoCompeteForm).autocomplete({
@@ -198,9 +221,6 @@ function geneSearch(studyID, autoCompeteForm, studySearch){
         autoFocus: true,
         source: availableGenes
     });
-
-    // Make sure that you can press enter to search the content of the autoCompleteForm
-    enterSearch(autoCompeteForm);
 
     if (studySearch === true) {
         // Shows all of the necessary content used for the QE analysis.
