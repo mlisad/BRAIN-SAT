@@ -52,18 +52,17 @@
                         </div>
                         <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
                             <h2>Explanation:</h2>
-								<hr>
-								A bar plot is used to visualize the quantitative expression (QE) analysis.
-								The abundance of the different conditions (x-axis) are calculated to TPM values and the TPM values are represented on the y-axis.
-								(1) Each of the bar plots is indicated with an error bar based on the sample with the lowest and the TPM value in the condition.
-								(2) Is the bar plot of the condition, the colors of the bar are based on the percentile group.
-								A percentiles are calculated based on the distribution of the abundance for each condition. <br>
-								<br>
-								<img src="/img/colorscale.png" width="50%" class="center-block"/><br>
-								<br>
-								These percentile groups consists of 13 divisions (see color bar), from not (significantly) expressed (grey) until very high expressed, 0-5 percentile (red).
-								This information is given when hovering over the bar plot (3).
-								(4) To save the bar plot, click this image.
+                            <hr>
+                            A bar plot is used to visualize quantitative expression (QE) analysis.
+                            The gene expression levels (abundance) in different conditions (x-axis) are depicted as TPM values (y-axis).
+                            (1) The error bars indicate the lowest and the highest TPM value.
+                            (2) The color of the bars reflect expression levels, color coding is based on percentiles.
+                            <br>
+                            <img src="/img/colorscale.png" width="50%" class="center-block"/><br>
+                            <br>
+                            These 13 percentile groups distribute gene expression levels from very low (grey) to very high expressed, 0-5 percentile (red).
+                            The percentiles are also shown when hovering over a bar (3).
+                            (4) To save the bar plot, click this image.
                         </div>
                     </div>
                 </span>
@@ -102,13 +101,12 @@
                         <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
                             <h2>Explanation:</h2>
                             <hr>
-								The differential expression (DE) analysis is visualized with a volcano plot.
-								The x-axis represents the logFC and the y-axis consist of the -log10(FDR).
-								The title of plot (1) indicates which conditions are compared.
-								In the example figure, astrocytes and neurons are compared.
-								Genes that are more highly expressed in the Neurons are in the  right side of the volcano plot (3) and the left side (2) consist of genes that are more highly expressed in the astrocytes.
-								More information is provided when you hover over the dots(4), consisting of the precise logFC, -log10(FDR) and the gene symbol.
-								For download purposes the following button can be used (5).
+                            Differential expression (DE) analysis is visualized in volcano plots.
+                            The x-axis represents logFC and the y-axis depicts -log10(FDR).
+                            The title of the plot (1) indicates which conditions are compared.
+                            In this particular plot, genes that are higher expressed in the neurons are located to the right side of the 0 on the x-axis (3) and dots left of the x-axis 0 are genes that are more abundantly expressed in astrocytes (2).
+                            More information about the dot can be obtained by hovering over a dot (4), providing the precise logFC, -log10(FDR) and the gene symbol that the dot represents.
+                            For download purposes, the following button can be used (5).
                         </div>
                     </div>
                 </span>
@@ -145,9 +143,9 @@
 
                     <div class="modal-body">
                         <div class="btn-group btn-group-justified">
-                            <div class="btn-group"><button class="btn btn-default tsneExplanation" type="button" data-toggle="collapse" data-target="#tsneSC" aria-expanded="false">TSNE</button></div>
+                            <div class="btn-group"><button class="btn btn-default tsneExplanation" type="button" data-toggle="collapse" data-target="#tsneSC" aria-expanded="false">tSNE</button></div>
                             <div class="btn-group"><button class="btn btn-default boxplotExplanation" type="button" data-toggle="collapse" data-target="#boxplotSC" aria-expanded="false">Box plot</button></div>
-                            <div class="btn-group"><button class="btn btn-default piechardExplanation" type="button" data-toggle="collapse" data-target="#piechardCS" aria-expanded="false">Pie chard</button></div>
+                            <div class="btn-group"><button class="btn btn-default piechartExplanation" type="button" data-toggle="collapse" data-target="#piechartCS" aria-expanded="false">Pie chart</button></div>
                         </div>
 
                         <hr>
@@ -159,12 +157,11 @@
                                     <img src="/img/scRNA_analysis_example_tsne.png" width="80%" class="center-block">
                                 </div>
                                 <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
-                                    The t-sne consists of several elements that might be useful for your analysis.
-                                    Initially the only variation is based on the different conditions (see legend).
-                                    The transparency of the samples is changed (1) when a gene is searched in the data.
-                                    A solid dot represents in percentages the highest value and a 'see through' dot means that the gene abundance (CPM) is a low value (or even 0).
-                                    Hovering over the dots enables a label that shows the sample name and conditions it was found (2).
-                                    The t-sne can be downloaded when you click on the camera (3).
+                                    The tSNE consists of several elements, initially variation is based on the different conditions (see legend).
+                                    The transparency of the dot is changed (1) when a gene is searched in the data.
+                                    A solid dot represents in percentages the highest value and a 'transparent' dot means that the gene expression level (CPM) is a low value (or even 0).
+                                    Hovering over the dots reveals a label that shows the sample name and conditions in which it was found (2).
+                                    The tSNE can be downloaded when you click on the camera (3).
                                 </div>
                             </div>
                         </div>
@@ -176,29 +173,28 @@
                                     <img src="/img/scRNA_analysis_example_boxplot.png" width="60%" class="center-block">
                                 </div>
                                 <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
-                                    The box plot provides additional information about the gene expression abundancy.
+                                    The box plot provides additional information about the gene expression level.
                                     The variation is based on the CPM values that are provided, each condition is equal to the condition of the tSNE.
                                     Variation that cannot be captured (1) by the box or whiskers represent the outliers.
-                                    The median, interquartile range, outside of the whiskers and the maximum and minimum values can be obtained by hovering over the boxplot (2).
-                                    This visualization will be downloaded after you press on the camera (3).
+                                    The median, interquartile range, outside of the whiskers and the maximum and minimum values can be obtained by hovering over the box plot (2).
+                                    This visualization will be downloaded after you click on the camera (3).
                                 </div>
                             </div>
 
                         </div>
 
-                        <div class="collapse" id="piechardCS">
-                            <h4>Pie chard example:</h4>
+                        <div class="collapse" id="piechartCS">
+                            <h4>Pie chart example:</h4>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img src="/img/scRNA_analysis_example_piechard.png" width="60%" class="center-block">
+                                    <img src="/img/scRNA_analysis_example_piechart.png" width="60%" class="center-block">
                                 </div>
                                 <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
-                                    The pie card is the figure that explains the distribution of all variance.
-                                    Explaining which condition has the most expression of a gene.
-                                    Each of the conditions is draw in the pie chard (1), including the percentage (2).
+                                    The pie chart is the figure that explains the distribution of all variance, explaining in which condition a gene is most abundantly expressed.
+                                    Each of the conditions is drawn in the pie chart (1), including the percentage (2).
                                     This percentage is calculated by dividing the CPM of the samples in one condition by the CPM value of all samples.
-                                    Hovering over a condition enables a label (3).
-                                    By clicking on the following button, this image can be downloaded (4).
+                                    Hovering over a condition reveals a label (3).
+                                    By clicking on the camera button, this image can be downloaded (4).
                                 </div>
                             </div>
                         </div>

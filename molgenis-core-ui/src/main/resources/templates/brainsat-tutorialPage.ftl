@@ -31,11 +31,11 @@
 			  <div class="well">
 			  	The Differential Expression (DE) analysis can be used to generate gene lists differentially expressed genes with the associated log fold changes and multiple testing corrected p-values between two conditions of interest (A vs. B). <br/>
 				<br/>
-			  	After performing the DE analysis, an interactive volcano scatterplot will be generated displaying the most significant genes.
-			  	The volcano scatterplot can be used to search a specific gene with the use of a zoom.
+			  	After performing the DE analysis, an interactive volcano scatter plot will be generated displaying the most significant genes.
+			  	The volcano scatter plot can be used to search a specific gene with the use of a zoom.
 			  	Information as the LogFC and -log(FDR) values can be seen with the use of a hover function.<br/>
 			  	<br/>
-			  	The table next to the scatterplot shows all the significant genes (FDR 0.05).
+			  	The table next to the scatter plot shows all the significant genes (FDR 0.05).
 			  	The columns: Gene symbol, LogFC and -log10(FDR) can be found within this table.
 			  	Genes of interest can be found with the use of the search bar at the top of the table.<br/>
 			  	<br/>
@@ -63,17 +63,17 @@
 
           <div class="collapse" id="SCRNAanalysis">
               <div class="well">
-                  The dashboard created for the single cell RNA sequencing dataset consists of 3 different visualizations. <br/>
+                  The dashboard created for the single cell RNA sequencing data set consists of 3 different visualizations. <br/>
                   <br/>
                   The first visualization (and only one in the beginning) is the interactive tSNE, that enables hovering over the data to obtain more information.
 				  Several colors are added to the tSNE to distinguish the different clusters. <br/>
                   <br/>
-				  The second (boxplot) and third (piecard) visualizations are exclusively available when a gene is searched.
-				  The different abundant gene expression levels (CPM) are visualized with the use of the boxplot.
+				  The second (box plot) and third (pi chart) visualizations are exclusively available when a gene is searched.
+				  The different abundant gene expression levels (CPM) are visualized with the use of the box plot.
 				  On the x-axis the different clusters are shown and the CPM expression level is shown on the y-axis. <br/>
 				  <br/>
-				  The piechard describes how the overall distribution of the gene of interest in different clusters.
-				  The combination of the boxplot and the piechard help explain the average and outliers of the gene in the clusters.
+				  The pie chart describes how the overall distribution of the gene of interest in different clusters.
+				  The combination of the box plot and the pie chart help explain the average and outliers of the gene in the clusters.
               </div>
           </div>
 		</p>

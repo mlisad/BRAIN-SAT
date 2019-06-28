@@ -81,16 +81,18 @@
                         <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
                             <h2>Explanation:</h2>
                             <hr>
-                            The search visualization is realized with a dot plot.
-                            This visualization can be used to compare the gene expression in different cell types.
-                            The different cell types are represented on the x-axis and the log2(CPM) values are indicated on the y-axis.
-                            (1) The gene that is filled in is shown in the top left corner of the plot.
-                            Different data point (2) contain two types of information, the first type of information is given by the color indication which
-                            is unique for an author. The second type of information is given by the shape: a mouse data point is indicated by a round dot, human is represented as a square and rat is shown with a rectangular.
-                            An information box is opened when you hover over the data points (3). The number given on the first line is the log2(CPM) value of the mean/median* of the samples.
-                            The last two lines contain the author name (year) and the region [strain].
-                            (4) shows the legend that can be used with the corresponding figure, the identifiers are based on the author (year) and the organism.
-                            This image can be saved when the camera image is clicked (5).
+                            The search visualization is represented by a dot plot.
+                            This dot plot can be used to compare gene expression between different cell types.
+                            These cell types are indicated on the x-axis and the y-axis depicts the average log2(CPM) values of control conditions per study.
+                            (1) The searched gene is shown in the top left corner of the plot.
+                            Different data points (2) contain two types of information:
+                                1) the color of the data point indicates author and year of publication;
+                                2) the shape of the data point represents the organism: Homo sapiens (square), Mus musculus (dot), Rattus norvegicus (diamond).
+                            An information box appears when hovering over the data points (3).
+                            The first number in the information box is the log2(CPM) value of the mean/median of all control samples.
+                            The second line contains author and year of publication information and the last line indicates the region/site where the cell type was obtained from [possible strain].
+                            The legend at the right side of the plot (4) also provides this information.
+                            This image can be saved by clicking the camera image (5).
                         </div>
                     </div>
                 </span>

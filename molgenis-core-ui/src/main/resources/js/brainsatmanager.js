@@ -94,19 +94,19 @@ $(document).ready(function () {
     //---------------------------//
     //   SC part of BRAIN-sat.   //
     //---------------------------//
-    // When clicking upon the tsneExplanation information in the scRNA hover box, the piechardCS and boxplotSC information is hidden.
+    // When clicking upon the tsneExplanation information in the scRNA hover box, the piechartCS and boxplotSC information is hidden.
     bodyCon.on("click", ".tsneExplanation", function(){
         $('#boxplotSC').collapse('hide');
-        $('#piechardCS').collapse('hide');
+        $('#piechartCS').collapse('hide');
     });
 
-    // When clicking upon the boxplotExplanation information in the scRNA hover box, the tsneSC and piechardCS information is hidden.
+    // When clicking upon the boxplotExplanation information in the scRNA hover box, the tsneSC and piechartCS information is hidden.
     bodyCon.on("click", ".boxplotExplanation", function(){
         $('#tsneSC').collapse('hide');
-        $('#piechardCS').collapse('hide');
+        $('#piechartCS').collapse('hide');
     });
     // When clicking upon the piechardExplanation information in the scRNA hover box, the tsneSC and boxplotSC information is hidden.
-    bodyCon.on("click", ".piechardExplanation", function(){
+    bodyCon.on("click", ".piechartExplanation", function(){
         $('#tsneSC').collapse('hide');
         $('#boxplotSC').collapse('hide');
     });
