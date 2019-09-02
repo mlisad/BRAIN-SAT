@@ -16,9 +16,7 @@
     <div class="well">
         <h2>Welcome to the <span style="text-decoration: underline;"><b>bra</b></span>in <span style="text-decoration: underline;"><b>in</b></span>teractive <span style="text-decoration: underline;"><b>s</b></span>equencing <span style="text-decoration: underline;"><b>a</b></span>nalysis <span style="text-decoration: underline;"><b>t</b></span>ool (BRAIN-sat)</h2>
         <img id="brainSatImage" src="/img/logoBRAINSAT2.png" alt="" width="25%" height="25%" />
-        BRAIN-sat is an interactive online platform that contains preprocessed data to enables analyses of public available studies. <br/>
-        This pre-processing enables the interactive analyses as searching for genes, quantitative and differentially expression analysis. <br/>
-        <br/>
+        BRAIN-sat is an interactive online platform with easy access to published gene expression studies for data exploration and gene of interest searches.
         If you have suggestions or questions regarding BRAIN-sat, please feel free to contact us.
         <br/>
 	<#include "brainsat-tutorialPage.ftl">
@@ -37,7 +35,7 @@
 						<span class="input-group-btn ">
 					        <button id="geneSearch" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
 					      </span>
-                        <input id="geneText" type="text" class="form-control searchGene ui-autocomplete-input" placeholder="Search for...">
+                        <input id="geneText" type="text" class="form-control searchGene ui-autocomplete-input" placeholder="Search for..." disabled>
                     </div>
                 </div>
             </div>
@@ -87,7 +85,7 @@
                             (1) The searched gene is shown in the top left corner of the plot.
                             Different data points (2) contain two types of information:
                                 1) the color of the data point indicates author and year of publication;
-                                2) the shape of the data point represents the organism: Homo sapiens (square), Mus musculus (dot), Rattus norvegicus (diamond).
+                            2) the shape of the data point represents the organism: <i>Homo sapiens</i> (square), <i>Mus musculus</i> (dot), <i>Rattus norvegicus</i> (diamond).
                             An information box appears when hovering over the data points (3).
                             The first number in the information box is the log2(CPM) value of the mean/median of all control samples.
                             The second line contains author and year of publication information and the last line indicates the region/site where the cell type was obtained from [possible strain].

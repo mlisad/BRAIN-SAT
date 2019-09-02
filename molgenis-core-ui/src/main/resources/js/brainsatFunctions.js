@@ -209,6 +209,7 @@ function geneSearch(studyID, autoCompeteForm, studySearch){
             }
             tenThousandCounter += 1
         }
+
     });
 
     // The autocomplete function of the searchbar for both the bar graph as the table is defined.
@@ -218,6 +219,11 @@ function geneSearch(studyID, autoCompeteForm, studySearch){
         autoFocus: true,
         source: availableGenes
     });
+
+    // Enable the use of the of geneText
+    if (autoCompeteForm === "#geneText") {
+        $(autoCompeteForm).prop("disabled", false);
+    }
 
     if (studySearch === true) {
         // Shows all of the necessary content used for the QE analysis.
@@ -272,6 +278,9 @@ function dynamicSort(property) {
 
 function fillGeneSearch(geneName) {
     if (availableGenes.includes(geneName)) {
+        if (document.getElementById("geneInformation")) {
+            $("#geneInformation").empty();
+        }
         document.getElementById("geneNameSearch").innerHTML = "";
         $.get("/api/v2/base_infoTableSearch").done(function(infoData) {
             infoData = infoData["items"];
@@ -287,7 +296,7 @@ function fillGeneSearch(geneName) {
             });
         });
     } else {
-        $('#geneInformation').html('<div class="alert alert-danger" role="alert"><strong>Oops!</strong> Unable to find: ' + geneName + ' <br/>Please try again.</div>' )
+        $('#geneInformation').html('<div id="geneAlert" class="alert alert-danger" role="alert"><strong>Oops!</strong> Unable to find: ' + geneName + ' <br/>Please try again.</div>' )
 
     }
 }
