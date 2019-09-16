@@ -7,7 +7,7 @@
       </div>
       <div class="modal-body">
 		<p>
-			The Brain interactive sequencing analysis tool (BRAIN-sat) is a comprehensive web-based tool to access and analyze neuronal transcriptome data. <br/>
+			The Brain interactive sequencing analysis tool (BRAIN-SAT) is a comprehensive web-based tool to access and analyze neuronal transcriptome data. <br/>
 			The tool has several features that can be accessed by using the drop-down menu:
 			<ul>
 				<li>Differential gene expression (DE) analysis</li>

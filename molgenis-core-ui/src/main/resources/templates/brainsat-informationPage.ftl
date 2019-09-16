@@ -39,7 +39,7 @@
                     <br/>
                     <br/>
 
-                    <h4>Visualization BRAIN-sat</h4>
+                    <h4>Visualization BRAIN-SAT</h4>
                     The set-up of <a href="https://github.com/molgenis/molgenis" target="_blank">MOLGENIS</a> and several javascript packages where used in order to develop BRAIN-sat.
                     The sorting of the table content was done with the use of <a href="https://www.kryogenix.org/code/browser/sorttable/" target="_blank">sorttable</a>.
                     Functionalities of <a href="https://iamceege.github.io/tooltipster/" target="_blank">Tooltipster</a> enabled the on hover tooltips of the information pictogram next to the interactive images.

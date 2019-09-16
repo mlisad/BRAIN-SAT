@@ -8,7 +8,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>${app_settings.title?html}</title>
+    <#--<title>${app_settings.title?html}</title>-->
+    <title>BRAIN-SAT</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -16,7 +17,8 @@
     <#if googleSignIn>
         <meta name="google-signin-client_id" content="${app_settings.googleAppClientId?html}">
     </#if>
-    <link rel="icon" href="<@resource_href "/img/molgenis.ico"/>" type="image/x-icon">
+    <#--<link rel="icon" href="<@resource_href "/img/molgenis.ico"/>" type="image/x-icon">-->
+    <link rel="icon" href="<@resource_href "/img/BRAINSAT.ico"/>" type="image/x-icon">
     <link rel="stylesheet" href="<@resource_href "/css/bootstrap.min.css"/>" type="text/css">
     <link rel="stylesheet" href="<@resource_href "/css/molgenis.css"/>" type="text/css">
     <link rel="stylesheet" href="<@resource_href "/css/${app_settings.bootstrapTheme?html}"/>" type="text/css"

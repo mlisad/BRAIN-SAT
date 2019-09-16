@@ -14,10 +14,12 @@
         <div id="divEmptyButton" class="btn-group"><button class="btn btn-primary disabled" type="button">&nbsp;</button></div>
 	</div>
     <div class="well">
-        <h2>Welcome to the <span style="text-decoration: underline;"><b>bra</b></span>in <span style="text-decoration: underline;"><b>in</b></span>teractive <span style="text-decoration: underline;"><b>s</b></span>equencing <span style="text-decoration: underline;"><b>a</b></span>nalysis <span style="text-decoration: underline;"><b>t</b></span>ool (BRAIN-sat)</h2>
-        <img id="brainSatImage" src="/img/logoBRAINSAT2.png" alt="" width="25%" height="25%" />
-        BRAIN-sat is an interactive online platform with easy access to published gene expression studies for data exploration and gene of interest searches.
-        If you have suggestions or questions regarding BRAIN-sat, please feel free to contact us.
+        <h2>Welcome to the <span style="text-decoration: underline;"><b>bra</b></span>in <span style="text-decoration: underline;"><b>in</b></span>teractive <span style="text-decoration: underline;"><b>s</b></span>equencing <span style="text-decoration: underline;"><b>a</b></span>nalysis <span style="text-decoration: underline;"><b>t</b></span>ool (BRAIN-SAT)</h2>
+        <img id="brainSatImage" src="/img/logoBRAINSAT2.png" alt="" width="20%" height="20%" />
+        <p>
+            BRAIN-SAT is an interactive online platform with easy access to published gene expression studies for data exploration and gene of interest searches.
+            If you have suggestions or questions regarding BRAIN-SAT, please feel free to contact us.
+        </p>
         <br/>
 	<#include "brainsat-tutorialPage.ftl">
 	</div>
