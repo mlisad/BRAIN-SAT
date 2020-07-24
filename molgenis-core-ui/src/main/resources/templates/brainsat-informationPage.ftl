@@ -74,10 +74,16 @@
                                 <td>Darmanis et al. (2017)</td>
                                 <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/29091775" target="_blank">Pubmed</a></td>
                                 <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84465" target="_blank">Data</a></td>
-                            </tr>                            <tr>
+                            </tr>
+                            <tr>
                                 <td>Galatro et al. (2017)</td>
                                 <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/28671693" target="_blank">Pubmed</a></td>
                                 <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99074" target="_blank">Data</a></td>
+                            </tr>
+                            <tr>
+                                <td>Geirsdottir et al. (2019)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/31835035" target="_blank">Pubmed</a></td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134705" target="_blank">Data</a></td>
                             </tr>
                             <tr>
                                 <td>Gosselin et al. (2014)</td>
